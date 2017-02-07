@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="keywords" content="苏州、竞技乎、大数据、竞赛平台">
+		<title>创建竞赛</title>
+		<link rel="shortcut icon" href="img/favicon.ico" type="image/png">
+		<link href="thirdparty/bootstrap/css/bootstrap-paper.min.css" rel="stylesheet">
+		<link href="css/base.css" rel="stylesheet">
+		<script src="thirdparty/jquery.min.js"></script>
+		<script src="thirdparty/bootstrap/js/bootstrap.js"></script>
+		<script src="js/fn.js"></script>
+	</head>
+
+	<body>
+		<nav class="navbar navbar-default" role="navigation">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+					<a class="navbar-brand" href="index.html"><img src="img/Logo_Hover.png" /></a>
+				</div>
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li class="">
+							<a href="competitions.html">竞赛列表</a>
+						</li>
+						<li class="">
+							<a href="workshows.html">作品</a>
+						</li>
+						<li class="">
+							<a href="about.html">关于我们</a>
+						</li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li>
+							<a href="#" data-toggle="modal" data-target="#login">登录</a>
+						</li>
+						<li>
+							<a href="#" data-toggle="modal" data-target="#register">注册</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 visible-lg-block ">
+					<ul class="nav nav-pills nav-stacked wraper ">
+						<li role="presentation"><a href="profile.html">个人档案</a></li>
+						<li role="presentation"><a href="joinmatch.html">参与的比赛</a></li>
+						<li role="presentation"><a href="jointeam.html">参与的队伍</a></li>
+						<li role="presentation"><a href="jointopic.html">参与的话题</a></li>
+						<li role="presentation" class="active"><a href="applymatch.html">创建竞赛</a></li>
+						<li role="presentation"><a href="ownmatch.html">创建的比赛</a></li>
+						<li role="presentation"><a href="message.html">消息</a></li>
+					</ul>
+				</div>
+				<div class="col-sm-12 col-md-12 hidden-lg mb10">
+					<ul class="nav nav-tabs ">
+						<li role="presentation"><a href="profile.html">个人档案</a></li>
+						<li role="presentation"><a href="joinmatch.html">参与的比赛</a></li>
+						<li role="presentation"><a href="jointeam.html">参与的队伍</a></li>
+						<li role="presentation"><a href="jointopic.html">参与的话题</a></li>
+						<li role="presentation" class="active"><a href="applymatch.html">创建竞赛</a></li>
+						<li role="presentation"><a href="ownmatch.html">创建的比赛</a></li>
+						<li role="presentation"><a href="message.html">消息</a></li>
+					</ul>
+				</div>
+
+				<div class="wraper col-sm-12 col-md-12 col-lg-9">
+					<form class="form-horizontal">
+						<fieldset>
+							<h4 class="text-center"><strong>欢迎使用“竞技乎”大数据竞赛平台</strong></h4>
+							<p class="text-center red">
+								请您如实填写以下信息，我们将尽快审核并联系您 审核通过后即可发布您自己的数据竞赛
+							</p>
+							<div class="form-group">
+								<label for="realName" class="col-lg-offset-2 col-lg-2 control-label">真实姓名<span class="red">*</span></label>
+								<div class="col-lg-6">
+									<input class="form-control" id="realName" placeholder="请输入您的名字" type="text" required="required">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="companyName" class="col-lg-offset-2 col-lg-2 control-label">公司名称<span class="red">*</span></label>
+								<div class="col-lg-6">
+									<input class="form-control" id="companyName" placeholder="请输入您的公司全称" type="text" required="required">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="jobTitle" class="col-lg-offset-2 col-lg-2 control-label">职位名称<span class="red">*</span></label>
+								<div class="col-lg-6">
+									<input class="form-control" id="jobTitle" placeholder="请输入您的职位" type="text" required="required">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="contact" class="col-lg-offset-2 col-lg-2 control-label">联系方式<span class="red">*</span></label>
+								<div class="col-lg-6">
+									<input class="form-control" id="contact" placeholder="请输入您的联系方式" type="text" required="required">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="email" class="col-lg-offset-2 col-lg-2 control-label">邮箱<span class="red">*</span></label>
+								<div class="col-lg-6">
+									<input class="form-control" id="email" placeholder="请输入您的邮箱" type="email" required="required">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="companySize" class="col-lg-offset-2 col-lg-2 control-label">公司规模<span class="red">*</span></label>
+								<div class="col-lg-6">
+									<select class="form-control" id="companySize">
+							          <option>10人以下</option>
+							          <option>10~100</option>
+							          <option>100~500</option>
+							          <option>500~1000</option>
+							          <option>1000人以上</option>
+							        </select>
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="companyType" class="col-lg-offset-2 col-lg-2 control-label">公司性质<span class="red">*</span></label>
+								<div class="col-lg-6">
+									<select class="form-control" id="companyType">
+							          <option>外资</option>
+							          <option>国营</option>
+							          <option>民营</option>
+							          <option>合资</option>
+							          <option>其它</option>
+							        </select>
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="objective" class="col-lg-offset-2 col-lg-2 control-label">比赛目的<span class="red">*</span></label>
+								<div class="col-lg-6">
+									<select class="form-control" id="objective">
+							          <option>探讨特定领域的学术问题</option>
+							          <option>其它</option>
+							        </select>
+								</div>
+							</div>
+							<hr />
+							
+							<h6 class="text-center">
+								得知竞技乎数据竞赛的渠道<span class="red">*</span>
+							</h6>
+							<div class="form-group">
+								<div class="col-lg-6 col-lg-offset-3">
+									<select class="form-control" id="channel">
+							          <option>朋友或同事推荐</option>
+							          <option>其它</option>
+							        </select>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-lg-6 col-lg-offset-3">
+									<input class="form-control" id="valCode" placeholder="请输入下图验证码" type="text" required="required">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-lg-12 text-center">
+									<img src="" class="img-thumbnail img-100" />
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-lg-12 text-center">
+									<button type="submit" class="btn btn-primary btn-lg btn-normal ">提交</button>
+								</div>
+							</div>
+						</fieldset>
+					</form>
+				</div>
+			</div>
+	</body>
+
+</html>

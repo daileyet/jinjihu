@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="keywords" content="苏州、竞技乎、大数据、竞赛平台">
+		<title>组建队伍</title>
+		<link rel="shortcut icon" href="../img/favicon.ico" type="image/png">
+		<link href="../thirdparty/bootstrap/css/bootstrap-paper.min.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="../css/wizard-step.css" />
+		<link href="../css/base.css" rel="stylesheet">
+		<script src="../thirdparty/jquery.min.js"></script>
+		<script src="../thirdparty/bootstrap/js/bootstrap.js"></script>
+		<script src="../js/fn.js"></script>
+		<style>
+			#uploadAvatar {
+				width: 60px;
+				height: 60px;
+				border-radius: 50%;
+				margin: 10px auto;
+				padding: 0;
+			}
+			
+			#uploadAvatar.empty {
+				background: #03A9F4;
+				text-align: center;
+				line-height: 60px;
+				color: white;
+			}
+			
+			#uploadAvatar.not-empty {
+				text-align: center;
+			}
+			
+			#uploadAvatar img {
+				width: 100%;
+				height: 100%;
+				margin: 0;
+				padding: 0;
+			}
+		</style>
+	</head>
+
+	<body>
+		<nav class="navbar navbar-default" role="navigation">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+					<a class="navbar-brand" href="../index.html"><img src="../img/Logo_Hover.png" /></a>
+				</div>
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li class="active">
+							<a href="../competitions.html">竞赛列表</a>
+						</li>
+						<li class="">
+							<a href="../workshows.html">作品</a>
+						</li>
+						<li class="">
+							<a href="../about.html">关于我们</a>
+						</li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li>
+							<a href="#" data-toggle="modal" data-target="#login">登录</a>
+						</li>
+						<li>
+							<a href="#" data-toggle="modal" data-target="#register">注册</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div class="container">
+			<div class="competition-header row">
+				<div class="col-md-2">
+					<img src="" class="img-thumbnail img-145" />
+				</div>
+				<div class="col-md-7"><label><strong>比赛名称大标题（算法类）</strong></label>
+					<span class="blue ml20">¥10000</span>
+					<span class="blue ml20">10支队伍</span>
+					<span class="blue ml20">50人参与</span>
+					<span class="blue ml20">400次提交</span>
+				</div>
+				<div class="col-md-3">
+					<button class="btn btn-primary btn-lg btn-normal">加入比赛</button>
+				</div>
+				<div class="competition-progress col-md-10">
+					<div class="bs-wizard mt10">
+						<div class="col-md-2 bs-wizard-step complete">
+							<div class="text-center bs-wizard-stepnum">线上报名</div>
+							<div class="progress">
+								<div class="progress-bar"></div>
+							</div>
+							<a href="#" class="bs-wizard-dot"></a>
+							<div class="bs-wizard-info text-center">2017.04.18 - 06.08</div>
+						</div>
+
+						<div class="col-md-2 bs-wizard-step complete">
+							<!-- complete -->
+							<div class="text-center bs-wizard-stepnum">初赛</div>
+							<div class="progress">
+								<div class="progress-bar"></div>
+							</div>
+							<a href="#" class="bs-wizard-dot"></a>
+							<div class="bs-wizard-info text-center">2017.05.18 - 06.18</div>
+						</div>
+
+						<div class="col-md-2 bs-wizard-step active">
+							<!-- complete -->
+							<div class="text-center bs-wizard-stepnum">复赛资格赋权</div>
+							<div class="progress">
+								<div class="progress-bar"></div>
+							</div>
+							<a href="#" class="bs-wizard-dot"></a>
+							<div class="bs-wizard-info text-center">2017.06.19 - 06.26</div>
+						</div>
+
+						<div class="col-md-2 bs-wizard-step disabled">
+							<!-- active -->
+							<div class="text-center bs-wizard-stepnum">复赛</div>
+							<div class="progress">
+								<div class="progress-bar"></div>
+							</div>
+							<a href="#" class="bs-wizard-dot"></a>
+							<div class="bs-wizard-info text-center">2017.06.19 - 06.26</div>
+						</div>
+
+						<div class="col-md-2 bs-wizard-step disabled">
+							<!-- active -->
+							<div class="text-center bs-wizard-stepnum">决赛</div>
+							<div class="progress">
+								<div class="progress-bar"></div>
+							</div>
+							<a href="#" class="bs-wizard-dot"></a>
+							<div class="bs-wizard-info text-center">2017.06.19 - 06.26</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-12 red text-center">
+					距离竞赛截止还有*天，截止后仍可参赛，但算法类竞赛可以更新成绩，无法获得奖品。创意类竞赛既不更新成绩也无法获得奖品。
+				</div>
+			</div>
+
+			<div class="competition-body row mt20">
+				<div class="competition-nav">
+					<div class="col-lg-2 visible-lg-block ">
+						<ul class="nav nav-pills nav-stacked wraper ">
+							<li role="presentation">
+								<a href="detail.html">竞赛详情</a>
+							</li>
+							<li role="presentation">
+								<a href="process.html">赛制流程</a>
+							</li>
+							<li role="presentation">
+								<a href="rank.html">排行榜</a>
+							</li>
+							<li role="presentation">
+								<a href="commit.html">提交结果</a>
+							</li>
+							<li role="presentation">
+								<a href="dataset.html">数据集</a>
+							</li>
+							<li role="presentation">
+								<a href="evaluation.html">评分标准</a>
+							</li>
+							<li role="presentation" class="active">
+								<a href="team.html">我的队伍</a>
+							</li>
+							<li role="presentation">
+								<a href="judge.html">大赛评委</a>
+							</li>
+							<li role="presentation">
+								<a href="agreement.html">参赛协议</a>
+							</li>
+							<li role="presentation">
+								<a href="question.html">FAQ</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-sm-12 col-md-12 hidden-lg mb10">
+						<ul class="nav nav-tabs ">
+							<li role="presentation">
+								<a href="detail.html">竞赛详情</a>
+							</li>
+							<li role="presentation">
+								<a href="process.html">赛制流程</a>
+							</li>
+							<li role="presentation">
+								<a href="rank.html">排行榜</a>
+							</li>
+							<li role="presentation">
+								<a href="commit.html">提交结果</a>
+							</li>
+							<li role="presentation">
+								<a href="dataset.html">数据集</a>
+							</li>
+							<li role="presentation">
+								<a href="evaluation.html">评分标准</a>
+							</li>
+							<li role="presentation" class="active">
+								<a href="team.html">我的队伍</a>
+							</li>
+							<li role="presentation">
+								<a href="judge.html">大赛评委</a>
+							</li>
+							<li role="presentation">
+								<a href="agreement.html">参赛协议</a>
+							</li>
+							<li role="presentation">
+								<a href="question.html">FAQ</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="competition-content">
+					<div class="wraper col-sm-12 col-md-12 col-lg-10">
+						<div class="section mt10 pad10">
+							<h4>组建队伍</h4>
+							<div class="text-center">
+								<img src="../img/Build_Team_Icon.png" class="" />
+								<BR>
+								<a href="#" data-toggle="modal" data-target="#createTeam" class="btn btn-primary btn-lg btn-normal">组建队伍</a>
+							</div>
+						</div>
+						<hr>
+						<div class="section mt10 pad10">
+							<h4>注意事项</h4>
+							<ol>
+								<li>队伍一旦组建，您将作为队长，且在这场比赛中<mark>不能再加入其它队伍</mark>，请知悉。</li>
+								<li>如需加入其它队伍，请勿组建队伍，而是联系要加入的队伍队长，查收并接受队长的邀请入队邮件。</li>
+								<li>队长可以解散队伍，队员可以退出加入的队伍，前提是该队伍没有比赛结果提交记录。</li>
+								<li>队伍头像大小不能超过 1MB。</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--
+        	modal dialog for create team
+        -->
+		<div class="modal fade" id="createTeam" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">
+						<span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
+					</button>
+						<h4 class="modal-title text-center" id="myModalLabel">建立队伍</h4>
+					</div>
+					<div class="modal-body">
+						<form class="form-horizontal">
+							<div class="form-group">
+								<input type="file" style="display: none;" id="upload" name="photo">
+								<div id="uploadAvatar" class="empty" style="cursor: pointer;" data-action="">上传头像</div>
+								<div id="uploadFileName" class="text-center">&nbsp;</div>
+							</div>
+							<div class="form-group">
+								<label for="teamname" class="control-label col-md-2 col-md-offset-2">名称</label> 
+								<div class="col-md-6">
+									<input type="text" class="form-control" id="teamname" name="teamName" placeholder="请输入队伍名称">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="intro" class="control-label col-md-2 col-md-offset-2">简介</label>
+								<div class="col-md-6">
+									<!--<input type="text" class="form-control" id="introl" name="teamDesc" placeholder="请输入简介或队伍宣言">-->
+									<textarea class="form-control" id="introl" name="teamDesc" placeholder="请输入简介或队伍宣言"></textarea>
+								</div>
+							</div>
+							<div class="block error error-build mt-10">&nbsp;</div>
+						</form>
+					</div>
+					<div class="modal-footer mb20">
+						<a data-next="" data-action="" id="teamSubmit" class="btn btn-lg btn-primary" href="team.html">组建队伍</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>
