@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="keywords" content="苏州、竞技乎、大数据、竞赛平台">
+		<title>竞技乎大数据竞赛平台</title>
+		<link rel="shortcut icon" href="img/favicon.ico" type="image/png">
+		<link href="thirdparty/bootstrap/css/bootstrap-paper.min.css" rel="stylesheet">
+		<link href="css/base.css" rel="stylesheet">
+		<script src="thirdparty/jquery.min.js"></script>
+		<script src="thirdparty/bootstrap/js/bootstrap.js"></script>
+		<script src="js/fn.js"></script>
+	</head>
+
+	<body>
+		<nav class="navbar navbar-default" role="navigation">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+					<a class="navbar-brand" href="/index.jhtml"><img src="img/Logo_Hover.png" /></a>
+				</div>
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li class="">
+							<a href="/competitions.jhtml">竞赛列表</a>
+						</li>
+						<li class="">
+							<a href="/workshows.jhtml">作品</a>
+						</li>
+						<li class="">
+							<a href="/about.jhtml">关于我们</a>
+						</li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li>
+							<a href="#" data-toggle="modal" data-target="#login">登录</a>
+						</li>
+						<li>
+							<a href="#" data-toggle="modal" data-target="#register">注册</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-12">&nbsp;</div>
+				<div class="col-md-12">&nbsp;</div>
+				<div class="col-md-12">&nbsp;</div>
+				<div class="col-md-12">
+					<p class="text-center ">
+						<h3 class="text-center"><strong>竞技乎大数据竞赛平台</strong></h3>
+						<h4 class="text-center">汇聚数据领域人才，寻找数据背后的智慧</h4>
+					</p>
+				</div>
+				<div class="col-md-12">
+					<p class="text-center">
+						<a class="btn btn-lg btn-primary btn-normal mt10 " href="#" role="button">加入比赛</a>
+						<a class="btn btn-lg btn-primary btn-normal mt10 " href="#" role="button">创建比赛</a>
+					</p>
+				</div>
+			</div>
+
+		</div>
+		<!-- login Modal -->
+		<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<form class="form-horizontal" id="loginForm" method="post" data-action="/user/login.do">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+							<h3 class="modal-title text-center" id="myModalLabel">登录</h3>
+						</div>
+						<div class="modal-body">
+							<div class="form-group">
+								<label for="account" class="col-md-offset-2 col-md-2 control-label">账号</label>
+								<div class="col-md-6">
+									<input type="text" class="form-control" id="account" name="account" placeholder="请输入用户名或邮箱">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="password" class="col-md-offset-2 col-md-2 control-label">密码</label>
+								<div class="col-md-6">
+									<input type="password" class="form-control" id="password" name="password" placeholder="请输入密码">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="validate" class="col-md-offset-2 col-md-2 control-label">验证码</label>
+								<div class="col-md-6">
+									<input type="text" class="form-control" id="validate" name="validateCode" placeholder="请输入下图验证码">
+								</div>
+							</div>
+							<div class="col-md-offset-2 col-md-8 text-center">
+								<img id="validateCodeImg" data-src="/user/validateCode.jhtml" src="..." class="img-thumbnail" />
+								<a href="#" onclick="javascript:reloadValidateCode();">看不清？</a>
+							</div>
+						</div>
+						<div class="error-log mt-10" style="color:red;">&nbsp;</div>
+						<div class="modal-footer">
+							<button type="button" id="loginSubmitBtn" class="btn btn-lg btn-primary login">登录</button>
+							<div class="tips">
+								<a href="#" data-toggle="modal" data-dismiss="modal" data-target="#register">没有账号?点此注册</a> /
+								<a href="/iforgot/pwd/reset.jhtml">忘记密码?</a>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<!-- register Modal -->
+		<div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<form class="form-horizontal" id="registerForm" method="post" data-action="/user/register.do">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+							<h3 class="modal-title text-center" id="myModalLabel">注册</h3>
+						</div>
+						<div class="modal-body">
+							<div class="form-group">
+								<label for="nickname" class="col-md-offset-2 col-md-2 control-label">用户名</label>
+								<div class="col-md-6">
+									<input type="text" class="form-control" id="nickname" name="userName" placeholder="请输入用户名">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="email" class="col-md-offset-2 col-md-2 control-label">邮箱</label>
+								<div class="col-md-6">
+									<input type="text" class="form-control" id="email" name="userEmail" placeholder="请输入邮箱">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="password" class="col-md-offset-2 col-md-2 control-label">密码</label>
+								<div class="col-md-6">
+									<input type="password" class="form-control" id="password" name="password" placeholder="请输入密码">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="password2" class="col-md-offset-2 col-md-2 control-label">确认密码</label>
+								<div class="col-md-6">
+									<input type="password" class="form-control" id="password2" name="password2" placeholder="请再次输入密码">
+								</div>
+							</div>
+						</div>
+						<div class="error-reg mt-10" style="color:red;">&nbsp;</div>
+						<div class="success-reg mt-10" style="color:green;display:none;">&nbsp;</div>
+						<div class="modal-footer">
+							<button type="button" id="regSubmitBtn" class="btn btn-lg btn-primary">发送邮箱激活链接</button>
+							<div class="tips">
+								<a href="#" data-toggle="modal" data-dismiss="modal" data-target="#login">已有账号，点此登录</a>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>
