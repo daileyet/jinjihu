@@ -88,9 +88,15 @@ label {
 .four {
 	flex: 1;
 }
-
+/*color*/
 .blue {
 	color: #03A9F4;
+}
+.red{
+	color:red;
+}
+.gainsboro{
+	color:gainsboro;	
 }
 
 .icon {
@@ -137,28 +143,33 @@ label {
 .mr-5 {
 	margin-right: -5px;
 }
+
 .mr5 {
 	margin-right: 5px;
 }
-.pad10{
+
+.pad10 {
 	padding: 10px;
 }
-.pad0{
+
+.pad0 {
 	padding: 0px;
 }
-.padr10{
-	padding:0;
+
+.padr10 {
+	padding: 0;
 	padding-right: 10px;
 }
 
-.padl10{
-	padding:0;
+.padl10 {
+	padding: 0;
 	padding-left: 10px;
 }
 
 .wraper {
 	border: 1px solid #eee;
 	margin-bottom: 20px;
+	border-radius: 3px;
 }
 
 hr {
@@ -179,8 +190,6 @@ td {
 	text-align: left;
 	padding-left: 20px;
 }
-
-
 
 .avatar {
 	width: 60px;
@@ -230,7 +239,6 @@ a:focus {
 	margin: 0 auto;
 }
 
-
 .error {
 	color: red;
 }
@@ -245,13 +253,31 @@ a:focus {
 	color: red;
 }
 
-.list-group-item{
+.list-group-item {
 	border: 0;
 	border-top: 1px solid #dddddd;
 }
 
-.img-100{
+.img-100 {
 	width: 100px;
 	height: 100px;
 	display: inline;
+}
+
+.img-100-circle {
+	width: 100px;
+	height: 100px;
+	display: inline;
+	border-radius: 50%;
+}
+
+
+.filter-bar a {
+	color: #B2BBC6;
+	letter-spacing: 0;
+}
+
+.filter-bar a.active {
+	color: #389BFF;
+	letter-spacing: 0;
 }
