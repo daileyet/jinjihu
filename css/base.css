@@ -40,54 +40,11 @@ label {
 	width: 200px;
 }
 
-.line {
-	background: #03A9F4;
-	height: 10px;
-	flex: 1;
-	margin-right: -1px;
-}
-
-.process {
-	display: flex;
-	margin-top: 20px;
-}
-
-.tips {
-	margin-top: 20px;
-}
-
-.timeline,
-.time,
-.number {
-	display: flex;
-	align-items: center;
-}
-
-.circle {
-	width: 40px;
-	height: 40px;
-	line-height: 40px;
-	border-radius: 50%;
-	background: #03A9F4;
-	text-align: center;
-	margin-right: -1px;
-	color: white;
-}
-
-.un-start {
-	background-color: #cccccc !important;
-}
-
 .join {
 	margin: 36px auto;
 }
 
-.one,
-.two,
-.three,
-.four {
-	flex: 1;
-}
+
 /*color*/
 .blue {
 	color: #03A9F4;
@@ -166,6 +123,30 @@ label {
 	padding-left: 10px;
 }
 
+@media (max-width: 768px){
+	.sm-ml20{
+		margin-left: 20px;
+	}
+	.sm-mt20{
+		margin-top: 20px;
+	}
+}
+
+@media (max-width: 992px){
+	.md-ml20{
+		margin-left: 20px;
+	}
+	.md-mt20{
+		margin-top: 20px;
+	}
+}
+
+@media (min-width: 1200px){
+	.lg-ml20{
+		margin-left: 20px;
+	}
+}
+
 .wraper {
 	border: 1px solid #eee;
 	margin-bottom: 20px;
@@ -223,21 +204,6 @@ a:focus {
 	text-decoration: none;
 }
 
-.verify {
-	margin: 30px auto;
-	display: block;
-	width: 288px;
-}
-
-.team {
-	text-align: center;
-	margin: 20px auto;
-}
-
-.createTeam {
-	display: block;
-	margin: 0 auto;
-}
 
 .error {
 	color: red;
@@ -263,6 +229,13 @@ a:focus {
 	height: 100px;
 	display: inline;
 }
+
+.img-145 {
+	width: 145px;
+	height: 145px;
+	display: inline;
+}
+
 
 .img-100-circle {
 	width: 100px;
