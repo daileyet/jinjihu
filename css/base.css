@@ -53,7 +53,7 @@ label {
 	color:red;
 }
 .gainsboro{
-	color:gainsboro;	
+	color:#B2B4B7 ;	
 }
 
 .icon {
@@ -223,6 +223,16 @@ a:focus {
 	border: 0;
 	border-top: 1px solid #dddddd;
 }
+.list-group-item.no-border {
+	border: 0;
+}
+
+.img-50 {
+	width: 50px;
+	height: 50px;
+	display: inline;
+}
+
 
 .img-100 {
 	width: 100px;
