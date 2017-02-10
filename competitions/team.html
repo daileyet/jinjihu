@@ -6,7 +6,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="keywords" content="苏州、竞技乎、大数据、竞赛平台">
-		<title>FAQ</title>
+		<title>我的队伍</title>
 		<link rel="shortcut icon" href="../img/favicon.ico" type="image/png">
 		<link href="../thirdparty/bootstrap/css/bootstrap-paper.min.css" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="../css/wizard-step.css" />
@@ -145,7 +145,7 @@
 							<li role="presentation">
 								<a href="evaluation.html">评分标准</a>
 							</li>
-							<li role="presentation">
+							<li role="presentation" class="active">
 								<a href="team.html">我的队伍</a>
 							</li>
 							<li role="presentation">
@@ -154,7 +154,7 @@
 							<li role="presentation">
 								<a href="agreement.html">参赛协议</a>
 							</li>
-							<li role="presentation" class="active">
+							<li role="presentation">
 								<a href="question.html">FAQ</a>
 							</li>
 						</ul>
@@ -179,7 +179,7 @@
 							<li role="presentation">
 								<a href="evaluation.html">评分标准</a>
 							</li>
-							<li role="presentation">
+							<li role="presentation" class="active">
 								<a href="team.html">我的队伍</a>
 							</li>
 							<li role="presentation">
@@ -188,7 +188,7 @@
 							<li role="presentation">
 								<a href="agreement.html">参赛协议</a>
 							</li>
-							<li role="presentation" class="active">
+							<li role="presentation">
 								<a href="question.html">FAQ</a>
 							</li>
 						</ul>
@@ -196,47 +196,56 @@
 				</div>
 				<div class="competition-content">
 					<div class="wraper col-sm-12 col-md-12 col-lg-10">
-						<div class="mt20 row">
-							<div class="col-md-4">
-								<div class="input-group ml20">
-									<input type="text" class="form-control" placeholder="搜索内容">
-									<span class="input-group-btn">
-						        <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
-									</span>
+						<div class="section mt10 pad10">
+							<h4>我的队伍</h4>
+							<div class="judge">
+								<div class="left">
+									<img src="" class="img-circle img-thumbnail img-100">
+								</div>
+
+								<div class="ml20">
+									<h4>这里显示的是队伍名称</h4>
+									<p>这里显示队伍简介或者队伍宣言这里显示队伍简介或者队伍宣言这里显示队伍简介或者队伍宣言这里显示队伍简介或者队伍宣言这里显示队伍简介或者队伍宣言</p>
 								</div>
 							</div>
-							<div class="col-md-8 text-right sm-mt20 md-mt20">
-								<button class="btn btn-primary btn-lg btn-normal">我要提问</button>
+						</div>
+						<hr>
+						<div class="section mt10 pad10">
+							<h4>队伍成员</h4>
+							<div class="list-group mt10 pad10">
+								<li class="list-group-item row no-border">
+									<h4 class="list-group-item-heading col-md-10">
+										<img src="" class="img-thumbnail img-circle img-50"> <small>这里显示队员昵称（队长）</small>
+									</h4>
+									<div class="col-md-2">
+										<button class="btn btn-primary " disabled>设为队长</button>
+									</div>
+								</li>
+								<li class="list-group-item row no-border">
+									<h4 class="list-group-item-heading col-md-10"><img src="" class="img-thumbnail img-circle img-50"> <small>这里显示队员昵称</small></h4>
+									<div class="col-md-2">
+										<button class="btn btn-primary ">设为队长</button>
+									</div>
+								</li>
+							</div>
+							<div class="text-center">
+								<a class="btn btn-primary btn-normal btn-lg" href="buildteam.html">退出队伍</a> <a class="btn btn-danger btn-normal btn-lg" href="buildteam.html">解散队伍</a>
 							</div>
 						</div>
-						<!-- competition faq list -->
-						<div class="list-group mt10 pad10">
-							<a href="question_detail.html" class="list-group-item row">
-								<p class="list-group-item-text mt10">
-									<h4 class="list-group-item-heading">Q: 最终上传结果有固定格式吗？</h4>
-									<p>问题详细描述内容问题详细描述内容问题详细描述内容问题详细描述内容问题详细描述内容</p>
-								</p>
-							</a>
-							<a href="question_detail.html" class="list-group-item row">
-								<p class="list-group-item-text mt10">
-									<h4 class="list-group-item-heading">Q: 最终上传数据有时间顺序要求吗？</h4>
-									<p>问题详细描述内容问题详细描述内容问题详细描述内容问题详细描述内容问题详细描述内容</p>
-								</p>
-							</a>
-							<a href="question_detail.html" class="list-group-item row">
-								<p class="list-group-item-text mt10">
-									<h4 class="list-group-item-heading">Q：排行榜成绩以何时提交数据为准？</h4>
-									<p>问题详细描述内容问题详细描述内容问题详细描述内容问题详细描述内容问题详细描述内容</p>
-								</p>
-							</a>
-							<a href="question_detail.html" class="list-group-item row">
-								<p class="list-group-item-text mt10">
-									<h4 class="list-group-item-heading">Q: 在order info 中重复出现的数据应如何处理？</h4>
-									<p>问题详细描述内容问题详细描述内容问题详细描述内容问题详细描述内容问题详细描述内容</p>
-								</p>
-							</a>
+						<hr>
+						<div class="section mt10 pad10">
+							<h4>邀请队友</h4>
+							<p class="gainsboro">将给指定邮箱发送邀请链接，需要他/她登录并通过验证身份信息，最多只能发上限-当前人数个邮箱数目</p>
+							<p class="gainsboro">若邀请失败，则该邮箱为无效地址或已加入其他队伍。</p>
+							<div class="row mb20">
+								<div class="col-md-8">
+									<input type="text" class="form-control" name="inviteEmails" id="inviteEmails" placeholder="请输入邮箱，多个邮箱中间请用英文半角的逗号分隔">
+								</div>
+								<div class="col-md-4 sm-mt20 md-mt20">
+									<button type="button" class="btn btn-primary btn-lg btn-normal" data-action="" id="inviteBtn" data-loading-text="邀请中..." autocomplete="off">邀请队友</button>
+								</div>
+							</div>
 						</div>
-
 					</div>
 				</div>
 			</div>

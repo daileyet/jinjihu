@@ -6,7 +6,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="keywords" content="苏州、竞技乎、大数据、竞赛平台">
-		<title>FAQ</title>
+		<title>数据集</title>
 		<link rel="shortcut icon" href="../img/favicon.ico" type="image/png">
 		<link href="../thirdparty/bootstrap/css/bootstrap-paper.min.css" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="../css/wizard-step.css" />
@@ -139,7 +139,7 @@
 							<li role="presentation">
 								<a href="commit.html">提交结果</a>
 							</li>
-							<li role="presentation">
+							<li role="presentation" class="active">
 								<a href="dataset.html">数据集</a>
 							</li>
 							<li role="presentation">
@@ -154,7 +154,7 @@
 							<li role="presentation">
 								<a href="agreement.html">参赛协议</a>
 							</li>
-							<li role="presentation" class="active">
+							<li role="presentation">
 								<a href="question.html">FAQ</a>
 							</li>
 						</ul>
@@ -173,7 +173,7 @@
 							<li role="presentation">
 								<a href="commit.html">提交结果</a>
 							</li>
-							<li role="presentation">
+							<li role="presentation" class="active">
 								<a href="dataset.html">数据集</a>
 							</li>
 							<li role="presentation">
@@ -188,7 +188,7 @@
 							<li role="presentation">
 								<a href="agreement.html">参赛协议</a>
 							</li>
-							<li role="presentation" class="active">
+							<li role="presentation">
 								<a href="question.html">FAQ</a>
 							</li>
 						</ul>
@@ -196,47 +196,84 @@
 				</div>
 				<div class="competition-content">
 					<div class="wraper col-sm-12 col-md-12 col-lg-10">
-						<div class="mt20 row">
-							<div class="col-md-4">
-								<div class="input-group ml20">
-									<input type="text" class="form-control" placeholder="搜索内容">
-									<span class="input-group-btn">
-						        <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
-									</span>
-								</div>
-							</div>
-							<div class="col-md-8 text-right sm-mt20 md-mt20">
-								<button class="btn btn-primary btn-lg btn-normal">我要提问</button>
+						<div class="section row pad10">
+							<h4 class="pt10">数据集下载</h4>
+							<div class="col-md-9 col-md-offset-1">
+								<table class="table table-bordered">
+									<thead>
+										<tr>
+											<td>文件名称</td>
+											<td>文件格式</td>
+											<td>文件大小</td>
+											<td>下载</td>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>training.zip</td>
+											<td>.zip</td>
+											<td>832MB</td>
+											<td>
+												<a type="button" class="btn btn-primary" target="_blank" href="#">下载</a>
+											</td>
+										</tr>
+										<tr>
+											<td>test_stg1.zip</td>
+											<td>.zip</td>
+											<td>231MB</td>
+											<td>
+												<a type="button" class="btn btn-primary" target="_blank" href="#">下载</a>
+											</td>
+										</tr>
+									</tbody>
+								</table>
 							</div>
 						</div>
-						<!-- competition faq list -->
-						<div class="list-group mt10 pad10">
-							<a href="question_detail.html" class="list-group-item row">
-								<p class="list-group-item-text mt10">
-									<h4 class="list-group-item-heading">Q: 最终上传结果有固定格式吗？</h4>
-									<p>问题详细描述内容问题详细描述内容问题详细描述内容问题详细描述内容问题详细描述内容</p>
-								</p>
-							</a>
-							<a href="question_detail.html" class="list-group-item row">
-								<p class="list-group-item-text mt10">
-									<h4 class="list-group-item-heading">Q: 最终上传数据有时间顺序要求吗？</h4>
-									<p>问题详细描述内容问题详细描述内容问题详细描述内容问题详细描述内容问题详细描述内容</p>
-								</p>
-							</a>
-							<a href="question_detail.html" class="list-group-item row">
-								<p class="list-group-item-text mt10">
-									<h4 class="list-group-item-heading">Q：排行榜成绩以何时提交数据为准？</h4>
-									<p>问题详细描述内容问题详细描述内容问题详细描述内容问题详细描述内容问题详细描述内容</p>
-								</p>
-							</a>
-							<a href="question_detail.html" class="list-group-item row">
-								<p class="list-group-item-text mt10">
-									<h4 class="list-group-item-heading">Q: 在order info 中重复出现的数据应如何处理？</h4>
-									<p>问题详细描述内容问题详细描述内容问题详细描述内容问题详细描述内容问题详细描述内容</p>
-								</p>
-							</a>
+						<hr>
+						<div class="section row pad10">
+							<h4 class="pt10">字段说明</h4>
+							<h5><small>订单信息表</small></h5>
+							<div class="col-md-9 col-md-offset-1">
+								<table class="table table-bordered">
+									<thead>
+										<td colspan="4">订单信息表</td>
+									</thead>
+									<thead>
+										<td>字段名</td>
+										<td>类型</td>
+										<td>含义</td>
+										<td>示例</td>
+									</thead>
+									<tbody>
+										<tr>
+											<td>order_id</td>
+											<td>String</td>
+											<td>订单号</td>
+											<td>1234567890</td>
+										</tr>
+										<tr>
+											<td>date</td>
+											<td>String</td>
+											<td>日期</td>
+											<td>2017/01/01</td>
+										</tr>
+										<tr>
+											<td>price</td>
+											<td>Decimal</td>
+											<td>价格</td>
+											<td>888.00</td>
+										</tr>
+										<tr>
+											<td>......</td>
+											<td>......</td>
+											<td>......</td>
+											<td>......</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
 						</div>
-
+						<p class="gainsboro">订单信息表主要覆盖了一张订单的基本信息，包括这张订单的日期，以及价格（NULL表示为空）。</p>
 					</div>
 				</div>
 			</div>

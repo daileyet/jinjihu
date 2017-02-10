@@ -6,10 +6,11 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="keywords" content="苏州、竞技乎、大数据、竞赛平台">
-		<title>FAQ</title>
+		<title>FAQ问题详细</title>
 		<link rel="shortcut icon" href="../img/favicon.ico" type="image/png">
 		<link href="../thirdparty/bootstrap/css/bootstrap-paper.min.css" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="../css/wizard-step.css" />
+		<link rel="stylesheet" type="text/css" href="../thirdparty/summernote/summernote.css"/>
 		<link href="../css/base.css" rel="stylesheet">
 		<script src="../thirdparty/jquery.min.js"></script>
 		<script src="../thirdparty/bootstrap/js/bootstrap.js"></script>
@@ -196,45 +197,33 @@
 				</div>
 				<div class="competition-content">
 					<div class="wraper col-sm-12 col-md-12 col-lg-10">
-						<div class="mt20 row">
-							<div class="col-md-4">
-								<div class="input-group ml20">
-									<input type="text" class="form-control" placeholder="搜索内容">
-									<span class="input-group-btn">
-						        <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
-									</span>
-								</div>
-							</div>
-							<div class="col-md-8 text-right sm-mt20 md-mt20">
-								<button class="btn btn-primary btn-lg btn-normal">我要提问</button>
-							</div>
+						<div class="question-header mt10 pad10">
+							<h4>Q: 最终上传结果有固定格式吗？</h4>
+							<p>问题详细描述内容问题详细描述内容问题详细描述内容问题详细描述内容问题详细描述内容</p>
 						</div>
-						<!-- competition faq list -->
+						<!-- competition faq reply list -->
 						<div class="list-group mt10 pad10">
-							<a href="question_detail.html" class="list-group-item row">
+							<li class="list-group-item row">
+								<h4 class="list-group-item-heading"><img src="" class="img-circle img-thumbnail img-50"/> 用户名</h4>
 								<p class="list-group-item-text mt10">
-									<h4 class="list-group-item-heading">Q: 最终上传结果有固定格式吗？</h4>
-									<p>问题详细描述内容问题详细描述内容问题详细描述内容问题详细描述内容问题详细描述内容</p>
+									回答内容回答信息各种回答回答内容回答信息各种回答回答内容回答信息各种回答回答内容回答信息各种回答回答内容回答信息各种回答回答内容回答信息各种回答回答内容回答信息各种回答
 								</p>
-							</a>
-							<a href="question_detail.html" class="list-group-item row">
+							</li>
+							<li class="list-group-item row">
+								<h4 class="list-group-item-heading"><img src="" class="img-circle img-thumbnail img-50"/> 用户名</h4>
 								<p class="list-group-item-text mt10">
-									<h4 class="list-group-item-heading">Q: 最终上传数据有时间顺序要求吗？</h4>
-									<p>问题详细描述内容问题详细描述内容问题详细描述内容问题详细描述内容问题详细描述内容</p>
+									回答内容回答信息各种回答回答内容回答信息各种回答回答内容回答信息各种回答回答内容回答信息各种回答回答内容回答信息各种回答回答内容回答信息各种回答回答内容回答信息各种回答
 								</p>
-							</a>
-							<a href="question_detail.html" class="list-group-item row">
-								<p class="list-group-item-text mt10">
-									<h4 class="list-group-item-heading">Q：排行榜成绩以何时提交数据为准？</h4>
-									<p>问题详细描述内容问题详细描述内容问题详细描述内容问题详细描述内容问题详细描述内容</p>
-								</p>
-							</a>
-							<a href="question_detail.html" class="list-group-item row">
-								<p class="list-group-item-text mt10">
-									<h4 class="list-group-item-heading">Q: 在order info 中重复出现的数据应如何处理？</h4>
-									<p>问题详细描述内容问题详细描述内容问题详细描述内容问题详细描述内容问题详细描述内容</p>
-								</p>
-							</a>
+							</li>
+						</div>
+						<div class="question-reply mt10 pad10 mb20">
+							<h4>添加回答</h4>
+							<div class="row mt10 pad10">
+								<div id="question_reply_editor"></div>
+							</div>
+							<div class="text-center">
+								<button class="btn btn-primary btn-lg btn-normal">提交</button>
+							</div>
 						</div>
 
 					</div>
@@ -242,6 +231,13 @@
 			</div>
 
 		</div>
+		<script src="../thirdparty/summernote/summernote.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../thirdparty/summernote/lang/summernote-zh-CN.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+			$(document).ready(function() {
+			  $('#question_reply_editor').summernote();
+			});
+		</script>
 	</body>
 
 </html>

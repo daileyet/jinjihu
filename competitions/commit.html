@@ -6,7 +6,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="keywords" content="苏州、竞技乎、大数据、竞赛平台">
-		<title>FAQ</title>
+		<title>提交结果</title>
 		<link rel="shortcut icon" href="../img/favicon.ico" type="image/png">
 		<link href="../thirdparty/bootstrap/css/bootstrap-paper.min.css" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="../css/wizard-step.css" />
@@ -136,7 +136,7 @@
 							<li role="presentation">
 								<a href="rank.html">排行榜</a>
 							</li>
-							<li role="presentation">
+							<li role="presentation" class="active">
 								<a href="commit.html">提交结果</a>
 							</li>
 							<li role="presentation">
@@ -154,7 +154,7 @@
 							<li role="presentation">
 								<a href="agreement.html">参赛协议</a>
 							</li>
-							<li role="presentation" class="active">
+							<li role="presentation">
 								<a href="question.html">FAQ</a>
 							</li>
 						</ul>
@@ -170,7 +170,7 @@
 							<li role="presentation">
 								<a href="rank.html">排行榜</a>
 							</li>
-							<li role="presentation">
+							<li role="presentation" class="active">
 								<a href="commit.html">提交结果</a>
 							</li>
 							<li role="presentation">
@@ -188,7 +188,7 @@
 							<li role="presentation">
 								<a href="agreement.html">参赛协议</a>
 							</li>
-							<li role="presentation" class="active">
+							<li role="presentation">
 								<a href="question.html">FAQ</a>
 							</li>
 						</ul>
@@ -196,45 +196,86 @@
 				</div>
 				<div class="competition-content">
 					<div class="wraper col-sm-12 col-md-12 col-lg-10">
-						<div class="mt20 row">
-							<div class="col-md-4">
-								<div class="input-group ml20">
-									<input type="text" class="form-control" placeholder="搜索内容">
-									<span class="input-group-btn">
-						        <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
-									</span>
-								</div>
-							</div>
-							<div class="col-md-8 text-right sm-mt20 md-mt20">
-								<button class="btn btn-primary btn-lg btn-normal">我要提问</button>
-							</div>
+						<div class="section">
+							<h4 class="pt10">提交规则</h4>
+							<ol>
+								<li>参赛者提交csv结果文件。</li>
+								<li>文件内容分为两列，第一类为“顾客id”，第二列为“逾期概率”，概率范围［0,1］格式如下：</li>
+								<table border="1px solid #eee">
+									<thead>
+										<td>顾客id</td>
+										<td>逾期率</td>
+									</thead>
+									<tbody>
+										<tr>
+											<td>0</td>
+											<td>0.1</td>
+										</tr>
+										<tr>
+											<td>1</td>
+											<td>0.3</td>
+										</tr>
+										<tr>
+											<td>2</td>
+											<td>0.9</td>
+										</tr>
+									</tbody>
+								</table>
+
+								<li>每日最多可提交次数:10
+									<div>参考:
+										<a target="_blank" href="#" class="blue">示例文件.csv</a>
+									</div>
+								</li>
+							</ol>
 						</div>
-						<!-- competition faq list -->
-						<div class="list-group mt10 pad10">
-							<a href="question_detail.html" class="list-group-item row">
-								<p class="list-group-item-text mt10">
-									<h4 class="list-group-item-heading">Q: 最终上传结果有固定格式吗？</h4>
-									<p>问题详细描述内容问题详细描述内容问题详细描述内容问题详细描述内容问题详细描述内容</p>
-								</p>
-							</a>
-							<a href="question_detail.html" class="list-group-item row">
-								<p class="list-group-item-text mt10">
-									<h4 class="list-group-item-heading">Q: 最终上传数据有时间顺序要求吗？</h4>
-									<p>问题详细描述内容问题详细描述内容问题详细描述内容问题详细描述内容问题详细描述内容</p>
-								</p>
-							</a>
-							<a href="question_detail.html" class="list-group-item row">
-								<p class="list-group-item-text mt10">
-									<h4 class="list-group-item-heading">Q：排行榜成绩以何时提交数据为准？</h4>
-									<p>问题详细描述内容问题详细描述内容问题详细描述内容问题详细描述内容问题详细描述内容</p>
-								</p>
-							</a>
-							<a href="question_detail.html" class="list-group-item row">
-								<p class="list-group-item-text mt10">
-									<h4 class="list-group-item-heading">Q: 在order info 中重复出现的数据应如何处理？</h4>
-									<p>问题详细描述内容问题详细描述内容问题详细描述内容问题详细描述内容问题详细描述内容</p>
-								</p>
-							</a>
+						<hr>
+						<div class="section">
+							<h4 class="pt10">提交结果</h4>
+							<form class="form-horizontal">
+								<div class=" form-group">
+									<label for="upload" class="control-label col-md-2">上传文件：</label>
+									<div class="col-md-8">
+										<input type="file" name="file" id="upload" class="btn btn-primary btn-lg">
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="note" class="control-label col-md-2">提交备注：</label>
+									<div class="col-md-8">
+										<textarea id="note" class="form-control" name="comments" placeholder="请输入备注信息"></textarea>
+									</div>
+								</div>
+								<div class="text-center ">
+									<button type="button" id="commit" class="btn btn-primary btn-lg btn-normal " data-action="">提交</button>
+								</div>
+							</form>
+						</div>
+						<hr>
+						<div class="section">
+							<h4 class="pt10">我的提交</h4>
+							<p class="mt20">
+								<span class="blue">101 </span>次成功提交，队友<span class="blue"> 100 </span>次成功提交
+							</p>
+							<table class="col-md-12">
+								<thead>
+									<td>头像</td>
+									<td>昵称</td>
+									<td>文件名</td>
+									<td>时间</td>
+									<td>状态</td>
+								</thead>
+								<tbody>
+									<tr>
+										<td>
+											<img src="" class="img-thumbnail img-circle img-50">
+										</td>
+										<td></td>
+										<td>test.csv</td>
+										<td>2017/01/01 10:33:34</td>
+										<td>成功</td>
+									</tr>
+								</tbody>
+							</table>
 						</div>
 
 					</div>

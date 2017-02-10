@@ -6,7 +6,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="keywords" content="苏州、竞技乎、大数据、竞赛平台">
-		<title>FAQ</title>
+		<title>组建队伍</title>
 		<link rel="shortcut icon" href="../img/favicon.ico" type="image/png">
 		<link href="../thirdparty/bootstrap/css/bootstrap-paper.min.css" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="../css/wizard-step.css" />
@@ -14,6 +14,33 @@
 		<script src="../thirdparty/jquery.min.js"></script>
 		<script src="../thirdparty/bootstrap/js/bootstrap.js"></script>
 		<script src="../js/fn.js"></script>
+		<style>
+			#uploadAvatar {
+				width: 60px;
+				height: 60px;
+				border-radius: 50%;
+				margin: 10px auto;
+				padding: 0;
+			}
+			
+			#uploadAvatar.empty {
+				background: #03A9F4;
+				text-align: center;
+				line-height: 60px;
+				color: white;
+			}
+			
+			#uploadAvatar.not-empty {
+				text-align: center;
+			}
+			
+			#uploadAvatar img {
+				width: 100%;
+				height: 100%;
+				margin: 0;
+				padding: 0;
+			}
+		</style>
 	</head>
 
 	<body>
@@ -145,7 +172,7 @@
 							<li role="presentation">
 								<a href="evaluation.html">评分标准</a>
 							</li>
-							<li role="presentation">
+							<li role="presentation" class="active">
 								<a href="team.html">我的队伍</a>
 							</li>
 							<li role="presentation">
@@ -154,7 +181,7 @@
 							<li role="presentation">
 								<a href="agreement.html">参赛协议</a>
 							</li>
-							<li role="presentation" class="active">
+							<li role="presentation">
 								<a href="question.html">FAQ</a>
 							</li>
 						</ul>
@@ -179,7 +206,7 @@
 							<li role="presentation">
 								<a href="evaluation.html">评分标准</a>
 							</li>
-							<li role="presentation">
+							<li role="presentation" class="active">
 								<a href="team.html">我的队伍</a>
 							</li>
 							<li role="presentation">
@@ -188,7 +215,7 @@
 							<li role="presentation">
 								<a href="agreement.html">参赛协议</a>
 							</li>
-							<li role="presentation" class="active">
+							<li role="presentation">
 								<a href="question.html">FAQ</a>
 							</li>
 						</ul>
@@ -196,51 +223,68 @@
 				</div>
 				<div class="competition-content">
 					<div class="wraper col-sm-12 col-md-12 col-lg-10">
-						<div class="mt20 row">
-							<div class="col-md-4">
-								<div class="input-group ml20">
-									<input type="text" class="form-control" placeholder="搜索内容">
-									<span class="input-group-btn">
-						        <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
-									</span>
-								</div>
-							</div>
-							<div class="col-md-8 text-right sm-mt20 md-mt20">
-								<button class="btn btn-primary btn-lg btn-normal">我要提问</button>
+						<div class="section mt10 pad10">
+							<h4>组建队伍</h4>
+							<div class="text-center">
+								<img src="../img/Build_Team_Icon.png" class="" />
+								<BR>
+								<a href="#" data-toggle="modal" data-target="#createTeam" class="btn btn-primary btn-lg btn-normal">组建队伍</a>
 							</div>
 						</div>
-						<!-- competition faq list -->
-						<div class="list-group mt10 pad10">
-							<a href="question_detail.html" class="list-group-item row">
-								<p class="list-group-item-text mt10">
-									<h4 class="list-group-item-heading">Q: 最终上传结果有固定格式吗？</h4>
-									<p>问题详细描述内容问题详细描述内容问题详细描述内容问题详细描述内容问题详细描述内容</p>
-								</p>
-							</a>
-							<a href="question_detail.html" class="list-group-item row">
-								<p class="list-group-item-text mt10">
-									<h4 class="list-group-item-heading">Q: 最终上传数据有时间顺序要求吗？</h4>
-									<p>问题详细描述内容问题详细描述内容问题详细描述内容问题详细描述内容问题详细描述内容</p>
-								</p>
-							</a>
-							<a href="question_detail.html" class="list-group-item row">
-								<p class="list-group-item-text mt10">
-									<h4 class="list-group-item-heading">Q：排行榜成绩以何时提交数据为准？</h4>
-									<p>问题详细描述内容问题详细描述内容问题详细描述内容问题详细描述内容问题详细描述内容</p>
-								</p>
-							</a>
-							<a href="question_detail.html" class="list-group-item row">
-								<p class="list-group-item-text mt10">
-									<h4 class="list-group-item-heading">Q: 在order info 中重复出现的数据应如何处理？</h4>
-									<p>问题详细描述内容问题详细描述内容问题详细描述内容问题详细描述内容问题详细描述内容</p>
-								</p>
-							</a>
+						<hr>
+						<div class="section mt10 pad10">
+							<h4>注意事项</h4>
+							<ol>
+								<li>队伍一旦组建，您将作为队长，且在这场比赛中<mark>不能再加入其它队伍</mark>，请知悉。</li>
+								<li>如需加入其它队伍，请勿组建队伍，而是联系要加入的队伍队长，查收并接受队长的邀请入队邮件。</li>
+								<li>队长可以解散队伍，队员可以退出加入的队伍，前提是该队伍没有比赛结果提交记录。</li>
+								<li>队伍头像大小不能超过 1MB。</li>
+							</ol>
 						</div>
-
 					</div>
 				</div>
 			</div>
-
+		</div>
+		<!--
+        	modal dialog for create team
+        -->
+		<div class="modal fade" id="createTeam" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">
+						<span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
+					</button>
+						<h4 class="modal-title text-center" id="myModalLabel">建立队伍</h4>
+					</div>
+					<div class="modal-body">
+						<form class="form-horizontal">
+							<div class="form-group">
+								<input type="file" style="display: none;" id="upload" name="photo">
+								<div id="uploadAvatar" class="empty" style="cursor: pointer;" data-action="">上传头像</div>
+								<div id="uploadFileName" class="text-center">&nbsp;</div>
+							</div>
+							<div class="form-group">
+								<label for="teamname" class="control-label col-md-2 col-md-offset-2">名称</label> 
+								<div class="col-md-6">
+									<input type="text" class="form-control" id="teamname" name="teamName" placeholder="请输入队伍名称">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="intro" class="control-label col-md-2 col-md-offset-2">简介</label>
+								<div class="col-md-6">
+									<!--<input type="text" class="form-control" id="introl" name="teamDesc" placeholder="请输入简介或队伍宣言">-->
+									<textarea class="form-control" id="introl" name="teamDesc" placeholder="请输入简介或队伍宣言"></textarea>
+								</div>
+							</div>
+							<div class="block error error-build mt-10">&nbsp;</div>
+						</form>
+					</div>
+					<div class="modal-footer mb20">
+						<a data-next="" data-action="" id="teamSubmit" class="btn btn-lg btn-primary" href="team.html">组建队伍</a>
+					</div>
+				</div>
+			</div>
 		</div>
 	</body>
 

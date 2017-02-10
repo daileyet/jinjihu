@@ -6,7 +6,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="keywords" content="苏州、竞技乎、大数据、竞赛平台">
-		<title>FAQ</title>
+		<title>赛制流程</title>
 		<link rel="shortcut icon" href="../img/favicon.ico" type="image/png">
 		<link href="../thirdparty/bootstrap/css/bootstrap-paper.min.css" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="../css/wizard-step.css" />
@@ -130,7 +130,7 @@
 							<li role="presentation">
 								<a href="detail.html">竞赛详情</a>
 							</li>
-							<li role="presentation">
+							<li role="presentation" class="active">
 								<a href="process.html">赛制流程</a>
 							</li>
 							<li role="presentation">
@@ -154,7 +154,7 @@
 							<li role="presentation">
 								<a href="agreement.html">参赛协议</a>
 							</li>
-							<li role="presentation" class="active">
+							<li role="presentation">
 								<a href="question.html">FAQ</a>
 							</li>
 						</ul>
@@ -164,7 +164,7 @@
 							<li role="presentation">
 								<a href="detail.html">竞赛详情</a>
 							</li>
-							<li role="presentation">
+							<li role="presentation" class="active">
 								<a href="process.html">赛制流程</a>
 							</li>
 							<li role="presentation">
@@ -188,7 +188,7 @@
 							<li role="presentation">
 								<a href="agreement.html">参赛协议</a>
 							</li>
-							<li role="presentation" class="active">
+							<li role="presentation">
 								<a href="question.html">FAQ</a>
 							</li>
 						</ul>
@@ -196,45 +196,32 @@
 				</div>
 				<div class="competition-content">
 					<div class="wraper col-sm-12 col-md-12 col-lg-10">
-						<div class="mt20 row">
-							<div class="col-md-4">
-								<div class="input-group ml20">
-									<input type="text" class="form-control" placeholder="搜索内容">
-									<span class="input-group-btn">
-						        <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
-									</span>
-								</div>
-							</div>
-							<div class="col-md-8 text-right sm-mt20 md-mt20">
-								<button class="btn btn-primary btn-lg btn-normal">我要提问</button>
-							</div>
+						<div class="section">
+							<h4>初赛（2017.05.18-2017.06.18）</h4>
+							<p>
+								1. 参赛队伍5月25日可下载数据，并在本地调试算法，提交结果。若参赛队伍在两次评测之间多次提交结果，新结果版本将覆盖旧版本； 2. 从5月25日18:00起，系统每天进行1次评测和排名，评测开始时间为每天12:00PM。按照评测指标从高到低更新排行榜，排行榜将选择参赛队伍在本阶段的历史最优成绩进行排名展示； 3. 本竞赛排行版采用A/B榜设置，使用测试集的50%数据作为A榜测试集，另外50%作为B榜测试集，最终线上成绩与排名以B榜成绩与排名为准（B榜成绩仅在初赛最后一天公布）； 4. 初赛截止时间是07月18日18:00，同时满足以下条件的队伍进入复赛： a. 在天池网站和CCF大赛官方完成注册且“昵称/姓名/邮箱/队名和队伍结构“一致； b. 通过实名认证 c. 初赛成绩排名前200名；
+							</p>
 						</div>
-						<!-- competition faq list -->
-						<div class="list-group mt10 pad10">
-							<a href="question_detail.html" class="list-group-item row">
-								<p class="list-group-item-text mt10">
-									<h4 class="list-group-item-heading">Q: 最终上传结果有固定格式吗？</h4>
-									<p>问题详细描述内容问题详细描述内容问题详细描述内容问题详细描述内容问题详细描述内容</p>
-								</p>
-							</a>
-							<a href="question_detail.html" class="list-group-item row">
-								<p class="list-group-item-text mt10">
-									<h4 class="list-group-item-heading">Q: 最终上传数据有时间顺序要求吗？</h4>
-									<p>问题详细描述内容问题详细描述内容问题详细描述内容问题详细描述内容问题详细描述内容</p>
-								</p>
-							</a>
-							<a href="question_detail.html" class="list-group-item row">
-								<p class="list-group-item-text mt10">
-									<h4 class="list-group-item-heading">Q：排行榜成绩以何时提交数据为准？</h4>
-									<p>问题详细描述内容问题详细描述内容问题详细描述内容问题详细描述内容问题详细描述内容</p>
-								</p>
-							</a>
-							<a href="question_detail.html" class="list-group-item row">
-								<p class="list-group-item-text mt10">
-									<h4 class="list-group-item-heading">Q: 在order info 中重复出现的数据应如何处理？</h4>
-									<p>问题详细描述内容问题详细描述内容问题详细描述内容问题详细描述内容问题详细描述内容</p>
-								</p>
-							</a>
+						<hr>
+						<div class="section">
+							<h4>复赛资格赋权（2017.06.19-2017.06.26）</h4>
+							<p>
+								1. 为防止参赛选手违规手段刷排名情况，需提供代码说明及最优结果生成文档（包括模型和特征的说明），如拒绝则取消获奖资格，晋级资格顺延； 2. 初赛结束前所有选手须完成实名认证，未经认证账号自动除名，排名顺延。进入复赛的参赛者被要求完成实名身份认证（需上传本人照片的有效身份证件，如身份证、护照、驾驶证等），逾期未上传的参赛者视为自动放弃比赛资格。
+							</p>
+						</div>
+						<hr>
+						<div class="section">
+							<h4>复赛（2017.06.27-2017.07.27）</h4>
+							<p>
+								1. 于北京时间6月27日12:00PM开始。 2. 参赛者可进行数据下载及本地算法调试，若参赛队伍在一天内多次提交结果，新结果版本将覆盖旧版本； 3. 系统每天进行一次评测和排名，每天12:00 PM更新排行榜（基于11:00 AM前提交结果进行评测）。按照评测指标从高到低进行排序，每天更新排行榜；排行榜将根据选手决赛中的历史最好结果进行排名，此排行榜成绩不作最终排名计算； 4. 最终结果提交时间为7月27日11:00 AM，于12:00 PM更新排行榜。决赛成绩排名前10名的队伍进入决赛环节。
+							</p>
+						</div>
+						<hr>
+						<div class="section">
+							<h4>决赛（2017.08.14）</h4>
+							<p>
+								1. 参与答辩的队伍需提前准备评审材料（含算法代码）； 2. 如团队人数较多，则团队需选择至多5名代表参与现场答辩； 3. 现场将邀请前10队伍参加答辩，前3名队伍分别荣获冠亚季军，并颁发奖金及证书（未到现场视为放弃比赛）； 4. 除冠亚季军外，还将根据现场表现，在答辩的所有队伍中角逐出最佳答辩、最具潜力等奖项。
+							</p>
 						</div>
 
 					</div>
