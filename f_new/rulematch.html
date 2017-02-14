@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="keywords" content="苏州、竞技乎、大数据、竞赛平台">
+		<title>创建竞赛-详情规则</title>
+		<link rel="shortcut icon" href="../img/favicon.ico" type="image/png">
+		<link href="../thirdparty/bootstrap/css/bootstrap-paper.min.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="../css/wizard-step.css" />
+		<link rel="stylesheet" type="text/css" href="../thirdparty/summernote/summernote.css"/>
+		<link rel="stylesheet" type="text/css" href="../thirdparty/bootstrap-datepicker/css/bootstrap-datepicker3.css"/>
+		<link href="../css/base.css" rel="stylesheet">
+		<script src="../thirdparty/jquery.min.js"></script>
+		<script src="../thirdparty/bootstrap/js/bootstrap.js"></script>
+		<script src="../thirdparty/bootstrap-datepicker/js/bootstrap-datepicker.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/fn.js"></script>
+	</head>
+
+	<body>
+		<nav class="navbar navbar-default" role="navigation">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+					<a class="navbar-brand" href="../index.html"><img src="../img/Logo_Hover.png" /></a>
+				</div>
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li class="">
+							<a href="../competitions.html">竞赛列表</a>
+						</li>
+						<li class="">
+							<a href="../workshows.html">作品</a>
+						</li>
+						<li class="">
+							<a href="../about.html">关于我们</a>
+						</li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li>
+							<a href="#" data-toggle="modal" data-target="#login">登录</a>
+						</li>
+						<li>
+							<a href="#" data-toggle="modal" data-target="#register">注册</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 visible-lg-block ">
+					<ul class="nav nav-pills nav-stacked wraper ">
+						<li role="presentation"><a href="../f_info/profile.html">个人档案</a></li>
+						<li role="presentation"><a href="../f_info/joinmatch.html">参与的比赛</a></li>
+						<li role="presentation"><a href="../f_info/jointeam.html">参与的队伍</a></li>
+						<li role="presentation"><a href="../f_info/jointopic.html">参与的话题</a></li>
+						<li role="presentation" class="active"><a href="../f_new/applymatch.html">创建竞赛</a></li>
+						<li role="presentation"><a href="../f_info/ownmatch.html">创建的比赛</a></li>
+						<li role="presentation"><a href="../f_info/message.html">消息</a></li>
+					</ul>
+				</div>
+				<div class="col-sm-12 col-md-12 hidden-lg mb10">
+					<ul class="nav nav-tabs ">
+						<li role="presentation"><a href="../f_info/profile.html">个人档案</a></li>
+						<li role="presentation"><a href="../f_info/joinmatch.html">参与的比赛</a></li>
+						<li role="presentation"><a href="../f_info/jointeam.html">参与的队伍</a></li>
+						<li role="presentation"><a href="../f_info/jointopic.html">参与的话题</a></li>
+						<li role="presentation" class="active"><a href="../f_new/applymatch.html">创建竞赛</a></li>
+						<li role="presentation"><a href="../f_info/ownmatch.html">创建的比赛</a></li>
+						<li role="presentation"><a href="../f_info/message.html">消息</a></li>
+					</ul>
+				</div>
+
+				<div class="col-sm-12 col-md-12 col-lg-9">
+					<div class="match-progress row">
+						<div class="bs-wizard mt10 pad10">
+							<div class="col-md-2 bs-wizard-step complete">
+								<div class="text-center bs-wizard-stepnum">申请</div>
+								<div class="progress">
+									<div class="progress-bar"></div>
+								</div>
+								<a href="applymatch.html" class="bs-wizard-dot"></a>
+							</div>
+	
+							<div class="col-md-2 bs-wizard-step complete">
+								<div class="text-center bs-wizard-stepnum">选择类型</div>
+								<div class="progress">
+									<div class="progress-bar"></div>
+								</div>
+								<a href="selectmatch.html" class="bs-wizard-dot"></a>
+							</div>
+	
+							<div class="col-md-2 bs-wizard-step complete">
+								<div class="text-center bs-wizard-stepnum">基本资料</div>
+								<div class="progress">
+									<div class="progress-bar"></div>
+								</div>
+								<a href="basematch.html" class="bs-wizard-dot"></a>							
+							</div>
+	
+							<div class="col-md-2 bs-wizard-step complete">
+								<div class="text-center bs-wizard-stepnum">上传数据</div>
+								<div class="progress">
+									<div class="progress-bar"></div>
+								</div>
+								<a href="datamatch.html" class="bs-wizard-dot"></a>
+							</div>
+	
+							<div class="col-md-2 bs-wizard-step complete">
+								<div class="text-center bs-wizard-stepnum">详情规则</div>
+								<div class="progress">
+									<div class="progress-bar"></div>
+								</div>
+								<a href="rulematch.html" class="bs-wizard-dot"></a>
+							</div>
+							<div class="col-md-2 bs-wizard-step complete">
+								<div class="text-center bs-wizard-stepnum">预览发布</div>
+								<div class="progress">
+									<div class="progress-bar"></div>
+								</div>
+								<a href="prviewmatch.html" class="bs-wizard-dot"></a>
+							</div>
+						</div>
+					</div><!-- end of progress-->
+					
+					<div class="match-content mt20 ">
+						<div class="section row wraper pad10">
+							<h4 class="section-title">背景及赛题介绍<a data-toggle="collapse" href="#match_desc" class="pull-right"><span class="glyphicon glyphicon-triangle-top"></span></a></h4>
+							<div class="section-content collapse in pad10" id="match_desc">
+								<div class="col-md-12">
+									<div id="match_desc_editor" ></div>
+								</div>
+								<div class="col-md-12 text-center pad10">
+									<button role="save_collapse" class="btn btn-primary btn-lg btn-normal">保存并收起</button>
+								</div>
+							</div>
+						</div>
+						
+						<div class="section row wraper pad10">
+							<h4 class="section-title">奖项设置<a data-toggle="collapse" href="#match_price" class="pull-right"><span class="glyphicon glyphicon-triangle-top"></span></a></h4>
+							<div class="section-content collapse in pad10" id="match_price">
+								<div class="col-md-12">
+									<div class="price-readonly price-items">
+										<div class="price-item row mb10">
+											<label role="title" class="col-md-3">冠军</label>
+											<label role="money" class="col-md-3">10000RMB</label>
+											<label role="team" class="col-md-3">1支队伍</label>
+											<div class="col-md-3 text-right">
+												<button role="delete" class="btn btn-primary">删除</button>
+											</div>
+										</div>
+										<div class="price-item row mb10">
+											<label role="title" class="col-md-3">亚军</label>
+											<label role="money" class="col-md-3">5000RMB</label>
+											<label role="team" class="col-md-3">2支队伍</label>
+											<div class="col-md-3 text-right">
+												<button role="delete" class="btn btn-primary">删除</button>
+											</div>
+										</div>
+									</div>
+									<div class="price-inputs row form-group mt10">
+										<div class="col-md-3">
+											<input class="form-control" name="title" type="text" placeholder="输入称号"/>
+										</div>
+										<div class="col-md-3">
+											<input class="form-control" name="money" type="text" placeholder="输入奖励"/>
+										</div>
+										<div class="col-md-3" name="team">
+											<select class="form-control">
+												<option value="1">1支队伍</option>
+												<option value="2">2支队伍</option>
+												<option value="3">3支队伍</option>
+												<option value="4">4支队伍</option>
+												<option value="5">5支队伍</option>
+												<option value="6">6支队伍</option>
+												<option value="7">7支队伍</option>
+												<option value="8">8支队伍</option>
+												<option value="9">9支队伍</option>
+												<option value="10">10支队伍</option>
+											</select>
+										</div>
+										<div class="col-md-3 text-right" >
+											<button role="add" class="btn btn-primary">确定</button>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-12 mt10">
+									<button role="add" class="btn btn-primary ">添加</button>
+								</div>
+								<div class="col-md-12 text-center pad10">
+									<button role="save_collapse" class="btn btn-primary btn-lg btn-normal">保存并收起</button>
+								</div>
+							</div>
+						</div>								
+								
+						<div class="section row wraper pad10">
+							<h4 class="section-title">赛制流程<a data-toggle="collapse" href="#match_process" class="pull-right"><span class="glyphicon glyphicon-triangle-top"></span></a></h4>
+							<div class="section-content collapse in pad10" id="match_process">
+								<div class="col-md-12">
+									<div class="process-items">
+										<div class="process-item row ">
+											<div class="form-group ">
+												<div class="col-md-3">
+													<input type="text" class="form-control" name="title" placeholder="阶段名称"/>
+												</div>
+												<div class="col-md-3">
+													<div class="input-group date" data-provide="datepicker">
+													    <input type="text" class="form-control" placeholder="开始时间">
+													    <div class="input-group-addon">
+													        <span class="glyphicon glyphicon-th"></span>
+													    </div>
+													</div>
+												</div>
+												<div class="col-md-3">
+													<div class="input-group date" data-provide="datepicker">
+													    <input type="text" class="form-control" placeholder="结束时间">
+													    <div class="input-group-addon">
+													        <span class="glyphicon glyphicon-th"></span>
+													    </div>
+													</div>
+												</div>
+												<div class="col-md-3 text-right">
+													<button role="delete" class="btn btn-primary">删除</button>
+												</div>
+											</div>
+											<div class="col-md-12 mt10">
+												<div id="match_process_editor_0" ></div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-12 mt10">
+									<button role="add" class="btn btn-primary ">添加</button>
+								</div>
+								<div class="col-md-12 text-center pad10">
+									<button role="save_collapse" class="btn btn-primary btn-lg btn-normal">保存并收起</button>
+								</div>
+							</div>
+						</div>
+						
+						<div class="section row wraper pad10">
+							<h4 class="section-title">评分标准<a data-toggle="collapse" href="#match_evaluate" class="pull-right"><span class="glyphicon glyphicon-triangle-top"></span></a></h4>
+							<div class="section-content collapse in pad10" id="match_evaluate">
+								<div class="col-md-12">
+									<div id="match_evaluate_editor" ></div>
+								</div>
+								<div class="col-md-12 text-center pad10">
+									<button role="save_collapse" class="btn btn-primary btn-lg btn-normal">保存并收起</button>
+								</div>
+							</div>
+						</div>
+						
+						<div class="section row wraper pad10">
+							<h4 class="section-title">相关规则<a data-toggle="collapse" href="#match_rule" class="pull-right"><span class="glyphicon glyphicon-triangle-top"></span></a></h4>
+							<div class="section-content collapse in pad10" id="match_rule">
+								<div class="col-md-12">
+									<div id="match_rule_editor" ></div>
+								</div>
+								<div class="col-md-12 text-center pad10">
+									<button role="save_collapse" class="btn btn-primary btn-lg btn-normal">保存并收起</button>
+								</div>
+							</div>
+						</div>
+						
+						<div class="section row wraper pad10 hidden">
+							<h4 class="section-title">自定义内容<a data-toggle="collapse" href="#match_customize_0" class="pull-right"><span class="glyphicon glyphicon-triangle-top"></span></a></h4>
+							<div class="section-content collapse in pad10" id="match_customize_0">
+								<div class="col-md-12 mb10">
+									<input class="form-control" type="text" placeholder="请输入内容标题" />
+								</div>
+								<div class="col-md-12">
+									<div id="match_customize_editor_0" ></div>
+								</div>
+								<div class="col-md-12 text-center pad10">
+									<button role="save_collapse" class="btn btn-primary btn-lg btn-normal">保存并收起</button>
+								</div>
+							</div>
+						</div>
+						
+						<div class="section row  pad10">
+							<div class="col-md-12 text-center">
+								<button role="add_cust" class="btn btn-primary btn-lg btn-normal">添加自定义内容</button>
+							</div>
+							<div class="col-md-12 text-center mt10 mb20">
+								<a href="prviewmatch.html" class="btn btn-primary btn-lg btn-normal">下一步</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		<script src="../thirdparty/summernote/summernote.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../thirdparty/summernote/lang/summernote-zh-CN.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+			$(document).ready(function() {
+				
+				$('#match_desc_editor').summernote();
+				$('[id^="match_process_editor_"]').summernote();
+				$('#match_evaluate_editor').summernote();
+				$('#match_rule_editor').summernote();
+				$('[id^="match_customize_editor_"]').summernote();
+				
+				$('div.collapse.section-content').on('hide.bs.collapse', function () {
+				  $(this).prev(".section-title").find("a span").removeClass("glyphicon-triangle-top").addClass("glyphicon-triangle-bottom");
+				});
+				$('div.collapse.section-content').on('show.bs.collapse', function () {
+				  $(this).prev(".section-title").find("a span").removeClass("glyphicon-triangle-bottom").addClass("glyphicon-triangle-top");
+				});
+				
+				$('button[role="save_collapse"]').click(function(){
+					$(this).parents('.section-content.collapse').collapse('hide');
+				});
+				
+				$('button[role="add_cust"]').click(function(){
+					$('#match_customize_0').parent().removeClass('hidden');
+					$(this).hide();
+				});
+			});
+		</script>
+	</body>
+
+</html>

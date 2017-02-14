@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="keywords" content="苏州、竞技乎、大数据、竞赛平台">
+		<title>创建竞赛-上传数据</title>
+		<link rel="shortcut icon" href="../img/favicon.ico" type="image/png">
+		<link href="../thirdparty/bootstrap/css/bootstrap-paper.min.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="../css/wizard-step.css" />
+		<link rel="stylesheet" type="text/css" href="../thirdparty/summernote/summernote.css"/>
+		<link href="../css/base.css" rel="stylesheet">
+		<script src="../thirdparty/jquery.min.js"></script>
+		<script src="../thirdparty/bootstrap/js/bootstrap.js"></script>
+		<script src="../js/fn.js"></script>
+	</head>
+
+	<body>
+		<nav class="navbar navbar-default" role="navigation">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+					<a class="navbar-brand" href="../index.html"><img src="../img/Logo_Hover.png" /></a>
+				</div>
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li class="">
+							<a href="../competitions.html">竞赛列表</a>
+						</li>
+						<li class="">
+							<a href="../workshows.html">作品</a>
+						</li>
+						<li class="">
+							<a href="../about.html">关于我们</a>
+						</li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li>
+							<a href="#" data-toggle="modal" data-target="#login">登录</a>
+						</li>
+						<li>
+							<a href="#" data-toggle="modal" data-target="#register">注册</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 visible-lg-block ">
+					<ul class="nav nav-pills nav-stacked wraper ">
+						<li role="presentation"><a href="../f_info/profile.html">个人档案</a></li>
+						<li role="presentation"><a href="../f_info/joinmatch.html">参与的比赛</a></li>
+						<li role="presentation"><a href="../f_info/jointeam.html">参与的队伍</a></li>
+						<li role="presentation"><a href="../f_info/jointopic.html">参与的话题</a></li>
+						<li role="presentation" class="active"><a href="../f_new/applymatch.html">创建竞赛</a></li>
+						<li role="presentation"><a href="../f_info/ownmatch.html">创建的比赛</a></li>
+						<li role="presentation"><a href="../f_info/message.html">消息</a></li>
+					</ul>
+				</div>
+				<div class="col-sm-12 col-md-12 hidden-lg mb10">
+					<ul class="nav nav-tabs ">
+						<li role="presentation"><a href="../f_info/profile.html">个人档案</a></li>
+						<li role="presentation"><a href="../f_info/joinmatch.html">参与的比赛</a></li>
+						<li role="presentation"><a href="../f_info/jointeam.html">参与的队伍</a></li>
+						<li role="presentation"><a href="../f_info/jointopic.html">参与的话题</a></li>
+						<li role="presentation" class="active"><a href="../f_new/applymatch.html">创建竞赛</a></li>
+						<li role="presentation"><a href="../f_info/ownmatch.html">创建的比赛</a></li>
+						<li role="presentation"><a href="../f_info/message.html">消息</a></li>
+					</ul>
+				</div>
+
+				<div class="col-sm-12 col-md-12 col-lg-9">
+					<div class="match-progress row">
+						<div class="bs-wizard mt10 pad10">
+							<div class="col-md-2 bs-wizard-step complete">
+								<div class="text-center bs-wizard-stepnum">申请</div>
+								<div class="progress">
+									<div class="progress-bar"></div>
+								</div>
+								<a href="applymatch.html" class="bs-wizard-dot"></a>
+							</div>
+	
+							<div class="col-md-2 bs-wizard-step complete">
+								<div class="text-center bs-wizard-stepnum">选择类型</div>
+								<div class="progress">
+									<div class="progress-bar"></div>
+								</div>
+								<a href="selectmatch.html" class="bs-wizard-dot"></a>
+							</div>
+	
+							<div class="col-md-2 bs-wizard-step complete">
+								<div class="text-center bs-wizard-stepnum">基本资料</div>
+								<div class="progress">
+									<div class="progress-bar"></div>
+								</div>
+								<a href="basematch.html" class="bs-wizard-dot"></a>							
+							</div>
+	
+							<div class="col-md-2 bs-wizard-step complete">
+								<div class="text-center bs-wizard-stepnum">上传数据</div>
+								<div class="progress">
+									<div class="progress-bar"></div>
+								</div>
+								<a href="datamatch.html" class="bs-wizard-dot"></a>
+							</div>
+	
+							<div class="col-md-2 bs-wizard-step complete">
+								<div class="text-center bs-wizard-stepnum">详情规则</div>
+								<div class="progress">
+									<div class="progress-bar"></div>
+								</div>
+								<a href="rulematch.html" class="bs-wizard-dot"></a>
+							</div>
+							<div class="col-md-2 bs-wizard-step complete">
+								<div class="text-center bs-wizard-stepnum">预览发布</div>
+								<div class="progress">
+									<div class="progress-bar"></div>
+								</div>
+								<a href="prviewmatch.html" class="bs-wizard-dot"></a>
+							</div>
+						</div>
+					
+					</div><!-- end of progress-->
+					
+					<div class="match-content row mt20 wraper pad10">
+						<form class="form-horizontal">
+							<div class="section">
+								<h4>上传数据</h4>
+								<div class="form-group">
+									<label class="control-label col-md-4">文件：TestFile.zip</label>
+									<div class="col-md-6">
+										<button class="btn btn-primary btn-lg btn-normal">删除</button>
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="bizfile" class="control-label col-md-4">上传文件：</label>
+									<div class="col-md-6">
+										<input type="file" name="bizfile" value="" class="hidden"/>
+										<button class="btn btn-primary btn-lg btn-normal">上传文件</button>
+									</div>
+								</div>
+							</div>
+							<div class="section">
+								<h4>数据说明</h4>
+								<div class="col-md-8 col-md-offset-2">
+									<div id="uploaddata_desc_editor"></div>
+								</div>
+							</div>
+							<div class="row"></div>
+							<hr>
+							<div class="section">
+								<h4>提交结果示例文件</h4>
+								<div class="form-group">
+									<label class="control-label col-md-4">文件：TestFile.zip</label>
+									<div class="col-md-6">
+										<button class="btn btn-primary btn-lg btn-normal">删除</button>
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="samplefile" class="control-label col-md-4">上传文件：</label>
+									<div class="col-md-6">
+										<input type="file" name="samplefile" value="" class="hidden"/>
+										<button class="btn btn-primary btn-lg btn-normal">上传文件</button>
+									</div>
+								</div>
+							</div>
+							<div class="section">
+								<h4>提交规则</h4>
+								<div class="col-md-8 col-md-offset-2">
+									<div id="uploadrule_desc_editor"></div>
+								</div>
+							</div>
+							<div class="col-md-12 text-center mb20 mt10">
+								<a href="rulematch.html" class="btn btn-primary btn-lg btn-normal">下一步</a>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		<script src="../thirdparty/summernote/summernote.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../thirdparty/summernote/lang/summernote-zh-CN.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+			$(document).ready(function() {
+			  $('#uploaddata_desc_editor').summernote();
+			  $('#uploadrule_desc_editor').summernote();
+			});
+		</script>
+	</body>
+
+</html>
