@@ -6,10 +6,11 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="keywords" content="苏州、竞技乎、大数据、竞赛平台">
-		<title>创建竞赛-比赛类型</title>
+		<title>创建竞赛-上传数据</title>
 		<link rel="shortcut icon" href="img/favicon.ico" type="image/png">
 		<link href="thirdparty/bootstrap/css/bootstrap-paper.min.css" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="css/wizard-step.css" />
+		<link rel="stylesheet" type="text/css" href="thirdparty/summernote/summernote.css"/>
 		<link href="css/base.css" rel="stylesheet">
 		<script src="thirdparty/jquery.min.js"></script>
 		<script src="thirdparty/bootstrap/js/bootstrap.js"></script>
@@ -130,62 +131,65 @@
 					</div><!-- end of progress-->
 					
 					<div class="match-content row mt20 wraper pad10">
-						<div class="section ">
-							<h4>计算型竞赛</h4>
-							<div>
-								<p>
-									竞赛描述内容竞赛描述内容竞赛描述内容竞赛描述内容竞赛描述内容竞赛描述内容竞赛描述内容竞赛描述内容竞赛描述内容竞赛描述内容竞赛描述内容竞赛描述内容竞赛描述内容竞赛描述内容竞赛描述内容竞赛描述内容竞赛描述内容竞赛描述内容竞赛描述内容竞赛描述内容ƒ
-								</p>
+						<form class="form-horizontal">
+							<div class="section">
+								<h4>上传数据</h4>
+								<div class="form-group">
+									<label class="control-label col-md-4">文件：TestFile.zip</label>
+									<div class="col-md-6">
+										<button class="btn btn-primary btn-lg btn-normal">删除</button>
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="bizfile" class="control-label col-md-4">上传文件：</label>
+									<div class="col-md-6">
+										<input type="file" name="bizfile" value="" class="hidden"/>
+										<button class="btn btn-primary btn-lg btn-normal">上传文件</button>
+									</div>
+								</div>
 							</div>
-						</div>
-						<hr>
-						<div class="section">
-							<h4>参赛者提交形式</h4>
-							<div>
-								<p>竞赛描述内容竞赛描述内容竞赛描述内容竞赛描述内容竞赛描述内容竞赛描述内容竞赛描述内容竞赛描述内容竞赛描述内容竞赛描述内容竞赛描述内容竞赛描述内容竞赛描述内容竞赛描述内容竞赛描述内容竞赛描述内容竞赛描述内容竞赛描述内容竞赛描述内容竞赛描述内容</p>
+							<div class="section">
+								<h4>数据说明</h4>
+								<div class="col-md-8 col-md-offset-2">
+									<div id="uploaddata_desc_editor"></div>
+								</div>
 							</div>
-						</div>
-						<hr>
-						<div class="section">
-							<h4>具体步骤</h4>
-							<div>
-								<p>竞赛描述内容竞赛描述内容竞赛描述内容竞赛描述内容竞赛描述内容竞赛描述内容竞赛描述内容竞赛描述内容竞赛描述内容竞赛描述内容竞赛描述内容竞赛描述内容竞赛描述内容竞赛描述内容竞赛描述内容竞赛描述内容竞赛描述内容竞赛描述内容竞赛描述内容竞赛描述内容</p>
+							<div class="row"></div>
+							<hr>
+							<div class="section">
+								<h4>提交结果示例文件</h4>
+								<div class="form-group">
+									<label class="control-label col-md-4">文件：TestFile.zip</label>
+									<div class="col-md-6">
+										<button class="btn btn-primary btn-lg btn-normal">删除</button>
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="samplefile" class="control-label col-md-4">上传文件：</label>
+									<div class="col-md-6">
+										<input type="file" name="samplefile" value="" class="hidden"/>
+										<button class="btn btn-primary btn-lg btn-normal">上传文件</button>
+									</div>
+								</div>
 							</div>
-						</div>
-						<div class="text-center mb20">
-							<button class="btn btn-primary btn-lg btn-normal">开始创建</button>
-						</div>
-					</div>
-					
-					<div class="match-content row mt20 wraper pad10">
-						<div class="section ">
-							<h4>创意型竞赛</h4>
-							<div>
-								<p>
-									竞赛描述内容竞赛描述内容竞赛描述内容竞赛描述内容竞赛描述内容竞赛描述内容竞赛描述内容竞赛描述内容竞赛描述内容竞赛描述内容竞赛描述内容竞赛描述内容竞赛描述内容竞赛描述内容竞赛描述内容竞赛描述内容竞赛描述内容竞赛描述内容竞赛描述内容竞赛描述内容ƒ
-								</p>
+							<div class="section">
+								<h4>提交规则</h4>
+								<div class="col-md-8 col-md-offset-2">
+									<div id="uploadrule_desc_editor"></div>
+								</div>
 							</div>
-						</div>
-						<hr>
-						<div class="section">
-							<h4>参赛者提交形式</h4>
-							<div>
-								<p>竞赛描述内容竞赛描述内容竞赛描述内容竞赛描述内容竞赛描述内容竞赛描述内容竞赛描述内容竞赛描述内容竞赛描述内容竞赛描述内容竞赛描述内容竞赛描述内容竞赛描述内容竞赛描述内容竞赛描述内容竞赛描述内容竞赛描述内容竞赛描述内容竞赛描述内容竞赛描述内容</p>
-							</div>
-						</div>
-						<hr>
-						<div class="section">
-							<h4>具体步骤</h4>
-							<div>
-								<p>竞赛描述内容竞赛描述内容竞赛描述内容竞赛描述内容竞赛描述内容竞赛描述内容竞赛描述内容竞赛描述内容竞赛描述内容竞赛描述内容竞赛描述内容竞赛描述内容竞赛描述内容竞赛描述内容竞赛描述内容竞赛描述内容竞赛描述内容竞赛描述内容竞赛描述内容竞赛描述内容</p>
-							</div>
-						</div>
-						<div class="text-center mb20">
-							<button class="btn btn-primary btn-lg btn-normal">开始创建</button>
-						</div>
+						</form>
 					</div>
 				</div>
 			</div>
+		<script src="thirdparty/summernote/summernote.js" type="text/javascript" charset="utf-8"></script>
+		<script src="thirdparty/summernote/lang/summernote-zh-CN.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+			$(document).ready(function() {
+			  $('#uploaddata_desc_editor').summernote();
+			  $('#uploadrule_desc_editor').summernote();
+			});
+		</script>
 	</body>
 
 </html>
