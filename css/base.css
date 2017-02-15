@@ -268,3 +268,10 @@ a:focus {
 	color: #389BFF;
 	letter-spacing: 0;
 }
+.section{
+	display:block;
+}
+
+hr{
+	display: block;
+}
