@@ -56,6 +56,10 @@ label {
 	color:#B2B4B7 ;	
 }
 
+.pass{
+	color:#389BFF;
+}
+
 .icon {
 	width: 24px;
 	height: 24px;
@@ -168,6 +172,9 @@ table {
 
 td {
 	padding: 10px;
+	text-align: center;
+}
+th{
 	text-align: center;
 }
 
