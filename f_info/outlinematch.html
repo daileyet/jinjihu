@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="keywords" content="苏州、竞技乎、大数据、竞赛平台">
+		<title>管理比赛</title>
+		<link rel="shortcut icon" href="../img/favicon.ico" type="image/png">
+		<link href="../thirdparty/bootstrap/css/bootstrap-paper.min.css" rel="stylesheet">
+		<link href="../css/base.css" rel="stylesheet">
+		<script src="../thirdparty/jquery.min.js"></script>
+		<script src="../thirdparty/bootstrap/js/bootstrap.js"></script>
+		<script src="../js/fn.js"></script>
+	</head>
+
+	<body>
+		<nav class="navbar navbar-default" role="navigation">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+			          <span class="sr-only">Toggle navigation</span>
+			          <span class="icon-bar"></span>
+			          <span class="icon-bar"></span>
+			          <span class="icon-bar"></span>
+			        </button>
+					<a class="navbar-brand" href="../index.html"><img src="../img/Logo_Hover.png" /></a>
+				</div>
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li class="">
+							<a href="../competitions.html">竞赛列表</a>
+						</li>
+						<li class="">
+							<a href="../workshows.html">作品</a>
+						</li>
+						<li class="">
+							<a href="../about.html">关于我们</a>
+						</li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li>
+							<a href="#" data-toggle="modal" data-target="#login">登录</a>
+						</li>
+						<li>
+							<a href="#" data-toggle="modal" data-target="#register">注册</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 visible-lg-block ">
+					<ul class="nav nav-pills nav-stacked wraper ">
+						<li role="presentation"><a href="profile.html">个人档案</a></li>
+						<li role="presentation"><a href="joinmatch.html">参与的比赛</a></li>
+						<li role="presentation"><a href="jointeam.html">参与的队伍</a></li>
+						<li role="presentation"><a href="jointopic.html">参与的话题</a></li>
+						<li role="presentation"><a href="../f_new/applymatch.html">创建竞赛</a></li>
+						<li role="presentation" class="active"><a href="ownmatch.html">创建的比赛</a></li>
+						<li role="presentation"><a href="message.html">消息</a></li>
+					</ul>
+				</div>
+				<div class="col-sm-12 col-md-12 hidden-lg mb10">
+					<ul class="nav nav-tabs ">
+						<li role="presentation"><a href="profile.html">个人档案</a></li>
+						<li role="presentation"><a href="joinmatch.html">参与的比赛</a></li>
+						<li role="presentation"><a href="jointeam.html">参与的队伍</a></li>
+						<li role="presentation"><a href="jointopic.html">参与的话题</a></li>
+						<li role="presentation"><a href="../f_new/applymatch.html">创建竞赛</a></li>
+						<li role="presentation" class="active"><a href="ownmatch.html">创建的比赛</a></li>
+						<li role="presentation"><a href="message.html">消息</a></li>
+					</ul>
+				</div>
+
+				<div class="wraper col-sm-12 col-md-12 col-lg-9">
+					<div class="section" id="statistics">
+						<h4>基本统计</h4>
+						<div id="graphic" class="col-md-12">
+							<canvas></canvas>
+						</div>
+						<div class="col-md-12 mt20">
+							<table class="table table-bordered">
+								<tbody>
+									<tr>
+										<th>参赛队伍</th>
+										<td>100</td>
+										<th>浏览量</th>
+										<td>1000次</td>
+									</tr>
+									<tr>
+										<th>人数</th>
+										<td>200</td>
+										<th>数据集下载</th>
+										<td>1000次</td>
+									</tr>
+									<tr>
+										<th>提交次数</th>
+										<td>500</td>
+										<th>问题数量</th>
+										<td>1000次</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<hr class="col-md-12"/>
+					<div class="section" id="submited">
+						<h4>提交资料</h4>
+						<div class="col-md-12 ">
+							<table class="table table-bordered">
+								<thead>
+									<tr>
+										<th>团队名称</th>
+										<th>提交者</th>
+										<th>文件名称</th>
+										<th>格式</th>
+										<th>提交时间</th>
+										<th>下载</th>
+										<th>备注</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td><a href="#" class="btn btn-primary btn-sm">下载</a></td>
+										<td><a href="#" >查看备注</a></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td><a href="#" class="btn btn-primary btn-sm">下载</a></td>
+										<td><a href="#" >查看备注</a></td>
+									</tr>
+								</tbody>
+							</table>
+							<nav>
+								<ul class="pager">
+										<li>
+											<a href="#">Previous</a>
+										</li>
+										<li>
+											<a href="#">Next</a>
+									</c:if>
+								</ul>
+							</nav>
+						</div>
+					</div>
+					<hr class="col-md-12"/>
+					<div class="section" id="leaderboard">
+						<h4>排行榜</h4>
+						<div class="col-md-12">
+							<table class="table table-bordered">
+								<thead>
+									<tr>
+										<th>头像</th>
+										<th>排名</th>
+										<th>排名变化</th>
+										<th>队名</th>
+										<th>最高得分</th>
+										<th>提交次数</th>
+										<th>最后提交时间</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td><img src="" class="img-thumbnail img-circle"/></td>
+										<td>1</td>
+										<td><img src="../img/Arrow_Up.png"/></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<td><img src="" class="img-thumbnail img-circle"/></td>
+										<td>2</td>
+										<td><img src="../img/Arrow_Down.png"/></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<td><img src="" class="img-thumbnail img-circle"/></td>
+										<td>3</td>
+										<td><img src="../img/Arrow_Down.png"/></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+								</tbody>
+							</table>
+							<nav>
+								<ul class="pager">
+										<li>
+											<a href="#">Previous</a>
+										</li>
+										<li>
+											<a href="#">Next</a>
+									</c:if>
+								</ul>
+							</nav>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			<script src="../thirdparty/chart/Chart.bundle.min.js" type="text/javascript" charset="utf-8"></script>
+			<script type="text/javascript">
+				var lineChartData = {
+				    labels : ["January","February","March","April","May","June","July","Agost","September","October","November","December"],
+				    datasets: [{
+				        data: [20, 30, 80, 20, 40, 10, 60,100,200,110,130,56],
+				        fill:false,
+				        pointRadius: 5,
+				        pointHitRadius: 10,
+				        pointBackgroundColor: "rgba(56, 155, 255,.6)",
+				        pointBorderWidth: 2,
+				        pointBorderColor:"#ffffe6",
+				        pointHoverRadius: 8,
+				        1:1
+				    }]
+				}
+				
+				var ctx = $("#graphic canvas");
+				var LineChartDemo = new Chart(ctx, {
+					type: 'line',
+					data: lineChartData,
+				    options:{
+				    	title:{display:false}
+				    }
+				});
+			</script>
+	</body>
+
+</html>
