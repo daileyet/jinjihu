@@ -207,17 +207,17 @@
 								最近更新时间 <span class="blue">2017/01/01 10:33:34</span>
 							</h5>
 						</div>
-						<div class="row">
-							<table class="col-md-12">
+						<div class="col-md-12">
+							<table class="table table-bordered">
 								<thead>
-									<tr style="border-bottom: 1px solid #E7E3E8;">
-										<td>头像</td>
-										<td>排名</td>
-										<td>排名变化</td>
-										<td>队名</td>
-										<td>最高得分</td>
-										<td>提交次数</td>
-										<td>最后提交时间</td>
+									<tr>
+										<th>头像</th>
+										<th>排名</th>
+										<th>排名变化</th>
+										<th>队名</th>
+										<th>最高得分</th>
+										<th>提交次数</th>
+										<th>最后提交时间</th>
 									</tr>
 								</thead>
 								<tbody>
@@ -280,15 +280,11 @@
 							</table>
 							<nav>
 								<ul class="pager">
-									<c:if test="${su:hasPrePg(page) }">
 										<li>
 											<a href="${su:pJ('rank') }?pageNo=${page.pageNo-1}&pageSize=${page.pageSize}">Previous</a>
 										</li>
-									</c:if>
-									<c:if test="${su:hasNextPg(page) }">
 										<li>
 											<a href="${su:pJ('rank') }?pageNo=${page.pageNo+1}&pageSize=${page.pageSize}">Next</a>
-										</li>
 									</c:if>
 								</ul>
 							</nav>
