@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 	<head>
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,11 +19,11 @@
 			<div class="container-fluid">
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
+			          <span class="sr-only">Toggle navigation</span>
+			          <span class="icon-bar"></span>
+			          <span class="icon-bar"></span>
+			          <span class="icon-bar"></span>
+			        </button>
 					<a class="navbar-brand" href="index.html"><img src="img/Logo_Hover.png" /></a>
 				</div>
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -40,11 +39,13 @@
 						</li>
 					</ul>
 					<ul class="nav navbar-nav navbar-right">
-						<li>
-							<a href="#" data-toggle="modal" data-target="#login">登录</a>
-						</li>
-						<li>
-							<a href="#" data-toggle="modal" data-target="#register">注册</a>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dailey <img src="img/Silhouette.png" style="margin-top: -10px;"><span class="caret"></span></a>
+							<ul class="dropdown-menu" role="menu">
+				              <li><a href="f_info/profile.html">我的档案</a></li>
+				              <li class="divider"></li>
+				              <li><a href="#">退出</a></li>
+				            </ul>
 						</li>
 					</ul>
 				</div>
