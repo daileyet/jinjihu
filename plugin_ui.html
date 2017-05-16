@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Plugin Index</title>
+		<link rel="shortcut icon" href="img/favicon.ico" type="image/png">
+		<link href="thirdparty/bootstrap/css/bootstrap-paper.min.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/dashboard.css" />
+		<script src="thirdparty/jquery.min.js"></script>
+		<script src="thirdparty/bootstrap/js/bootstrap.js"></script>
+		<script src="js/holder.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+	            <span class="sr-only">Toggle navigation</span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	          </button>
+					<a class="navbar-brand" href="#">Plugin Home</a>
+				</div>
+				<div id="navbar" class="navbar-collapse collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<c:choose>
+							<c:when test="${su:hasLogin() }">
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown"> <span class="text-truncate profile-name">${loginUser.userName }</span> <img src="${su:pfJ('/user/photo_%d',loginUser.id)}" class="img-thumbnail avatar-small profile-avatar" style="margin-top: -13px;"><span class="caret"></span></a>
+									<ul class="dropdown-menu" role="menu">
+										<li>
+											<a href="${su:pJ('/i/profile') }">我的档案</a>
+										</li>
+										<li>
+											<a href="${su:pJ('/c/index') }">创建竞赛</a>
+										</li>
+										<li class="divider"></li>
+										<li>
+											<a href="${su:pD('/user/logout') }">退出</a>
+										</li>
+									</ul>
+								</li>
+							</c:when>
+							<c:otherwise>
+								<li>
+									<a href="#" data-toggle="modal" data-target="#login">登录</a>
+								</li>
+								<li>
+									<a href="#" data-toggle="modal" data-target="#register">注册</a>
+								</li>
+							</c:otherwise>
+						</c:choose>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<div class="container main">
+			<ol class="breadcrumb ">
+				<li>
+					<a href="${su:pJ('/admin/plugins/index') }">插件首页</a>
+				</li>
+				<li class="active">${pluginItem.pluginName }</li>
+			</ol>
+			<div class="page-header">
+				<h1>${pluginItem.pluginName } <small>${pluginItem.pluginDesc }</small></h1>
+			</div>
+			<div class="plugin-content">
+				<div class="btn-group">
+					<button type="button" class="btn btn-primary">操作</button>
+					<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					    <span class="caret"></span>
+					    <span class="sr-only">Toggle Dropdown</span>
+				    </button>
+					<ul class="dropdown-menu">
+						<li>
+							<a href="#">上传CSV</a>
+						</li>
+						<li>
+							<a href="#">加载上传的CSV</a>
+						</li>
+						<li>
+							<a href="#">导入上传的CSV到系统</a>
+						</li>
+						<li role="separator" class="divider"></li>
+						<li>
+							<a href="#" ><span class="text-danger">清空加载的数据</span></a>
+						</li>
+					</ul>
+				</div>
+				
+				<div class="table-responsive">
+					<table class="table table-striped">
+						<thead>
+							<tr>
+								<th>姓名</th>
+								<th>工作年限</th>
+								<th>学历</th>
+								<th>工作岗位</th>
+								<th>工作单位</th>
+								<th>通讯地址</th>
+								<th>邮政编码</th>
+								<th>手机号码</th>
+								<th>单位电话</th>
+								<th>邮箱</th>
+								<th>身份证号码</th>
+								<th>公积金编号</th>
+								<th>准考证号</th>
+								<th>审核状态</th>
+								<th>失败原因</th>
+								<th>参赛项目</th>
+								<th>照片路径</th>
+								<th>报名日期</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>-</td>
+								<td>-</td>
+								<td>-</td>
+								<td>-</td>
+								<td>-</td>
+								<td>-</td>
+								<td>-</td>
+								<td>-</td>
+								<td>-</td>
+								<td>-</td>
+								<td>-</td>
+								<td>-</td>
+								<td>-</td>
+								<td>-</td>
+								<td>-</td>
+								<td>-</td>
+								<td>-</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+
+	</body>
+
+</html>
