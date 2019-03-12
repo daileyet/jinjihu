@@ -2,7 +2,9 @@
 	padding: 10px;
 }
 
-.navbar-brand img {}
+.navbar-brand img {
+	
+}
 
 .navbar-nav li a {
 	font-size: 14pt;
@@ -27,8 +29,7 @@ label {
 	/*font-weight: bold;*/
 }
 
-.modal-header,
-.modal-footer {
+.modal-header, .modal-footer {
 	border: none;
 }
 
@@ -40,24 +41,33 @@ label {
 	width: 200px;
 }
 
+.bootbox .modal-footer>button {
+	width: initial;
+}
+
+.modal-footer.default>button {
+	width: initial;
+}
+
 .join {
 	margin: 36px auto;
 }
-
 
 /*color*/
 .blue {
 	color: #03A9F4;
 }
-.red{
-	color:red;
-}
-.gainsboro{
-	color:#B2B4B7 ;	
+
+.red {
+	color: red;
 }
 
-.pass{
-	color:#389BFF;
+.gainsboro {
+	color: #B2B4B7;
+}
+
+.pass {
+	color: #389BFF;
 }
 
 .icon {
@@ -108,13 +118,21 @@ label {
 .mr5 {
 	margin-right: 5px;
 }
+.pad0{
+	padding: 0px;
+}
+
+.pad5 {
+	padding: 5px;
+}
+
 
 .pad10 {
 	padding: 10px;
 }
 
-.pad15{
-	padding:15px;
+.pad15 {
+	padding: 15px;
 }
 
 .pad0 {
@@ -131,26 +149,52 @@ label {
 	padding-left: 10px;
 }
 
-@media (max-width: 768px){
-	.sm-ml20{
+.padl15 {
+	padding: 0;
+	padding-left: 15px;
+}
+
+.padl20 {
+	padding: 0;
+	padding-left: 20px;
+}
+.padl25 {
+	padding: 0;
+	padding-left: 25px;
+}
+
+.padl30 {
+	padding: 0;
+	padding-left: 30px;
+}
+
+
+.padlr15 {
+	padding: 0;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+@media screen and ( max-width : 768px) {
+	.sm-ml20 {
 		margin-left: 20px;
 	}
-	.sm-mt20{
+	.sm-mt20 {
 		margin-top: 20px;
 	}
 }
 
-@media (max-width: 992px){
-	.md-ml20{
+@media screen and ( max-width : 992px) {
+	.md-ml20 {
 		margin-left: 20px;
 	}
-	.md-mt20{
+	.md-mt20 {
 		margin-top: 20px;
 	}
 }
 
-@media (min-width: 1200px){
-	.lg-ml20{
+@media screen and ( min-width : 1200px) {
+	.lg-ml20 {
 		margin-left: 20px;
 	}
 }
@@ -174,7 +218,8 @@ td {
 	padding: 10px;
 	text-align: center;
 }
-th{
+
+th {
 	text-align: center;
 }
 
@@ -200,7 +245,7 @@ canvas {
 }
 
 .info {
-	display: flex;
+	/* display: flex; */
 	font-size: 20px;
 	margin: 20px auto;
 }
@@ -210,11 +255,9 @@ canvas {
 	margin: 20px auto;
 }
 
-a:hover,
-a:focus {
+a:hover, a:focus {
 	text-decoration: none;
 }
-
 
 .error {
 	color: red;
@@ -234,6 +277,7 @@ a:focus {
 	border: 0;
 	border-top: 1px solid #dddddd;
 }
+
 .list-group-item.no-border {
 	border: 0;
 }
@@ -243,7 +287,6 @@ a:focus {
 	height: 50px;
 	display: inline;
 }
-
 
 .img-100 {
 	width: 100px;
@@ -257,6 +300,11 @@ a:focus {
 	display: inline;
 }
 
+.img-200X150 {
+	width: 200px;
+	height: 150px;
+	display: inline;
+}
 
 .img-100-circle {
 	width: 100px;
@@ -264,7 +312,6 @@ a:focus {
 	display: inline;
 	border-radius: 50%;
 }
-
 
 .filter-bar a {
 	color: #B2BBC6;
@@ -275,10 +322,126 @@ a:focus {
 	color: #389BFF;
 	letter-spacing: 0;
 }
-.section{
-	display:block;
-}
 
-hr{
+.section {
 	display: block;
 }
+
+hr {
+	display: block;
+}
+
+.error, .error-reg, .error-log {
+	color: red;
+}
+
+.success-reg {
+	color: green;
+}
+
+.text-truncate {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.right-top-header .user-info ul.dropdown-menu {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	z-index: 11000;
+	display: none;
+	float: left;
+	min-width: 160px;
+	padding: 5px 0;
+	margin: 2px 0 0;
+	list-style: none;
+	font-size: 13px;
+	text-align: left;
+	background-color: #ffffff;
+	border: 1px solid #cccccc;
+	border: 1px solid rgba(0, 0, 0, 0.15);
+	border-radius: 3px;
+	-webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+}
+
+.user-info.open>.dropdown-menu {
+	display: block !important;
+}
+
+.user-info.open>.dropdown-menu li {
+	display: block !important;
+	margin: 0 !important;
+	width: 100% !important;
+}
+
+.user-info.open>.dropdown-menu li a {
+	width: 100% !important;
+}
+
+.kopa-header-01 .kopa-logo {
+	margin-top: 0px;
+	margin-bottom: 14px;
+}
+
+@media screen and (max-width: 1024px) and (min-width: 981px) {
+	.kopa-header-01 .kopa-logo {
+		margin-top: 0px !important;
+		margin-bottom: -20px !important;
+	}
+}
+
+@media screen and (max-width: 980px) and (min-width: 801px) {
+	.kopa-header-01 .kopa-logo {
+		margin-top: 0px !important;
+		margin-bottom: -17px !important;
+	}
+}
+
+@media screen and (max-width: 1199px) and (min-width: 1025px) {
+	.kopa-header-01 .top-header {
+    position: relative;
+    width: auto;
+    float: right;
+    background-color: #2c3e50;
+    transform: skew(20deg);
+    -webkit-transform: skew(20deg);
+    -ms-transform: skew(20deg);
+    -moz-transform: skew(20deg);
+    -o-transform: skew(20deg);
+    z-index: 9;
+    margin-right: 30px;
+    margin-top: -35px;
+	
+}
+}
+.table-no-border-lr{
+	border: 0;
+}
+.table-no-border-lr tr,.table-no-border-lr tr td:first-child{
+	border-left-width:0px !important;
+}
+.table-no-border-lr tr,.table-no-border-lr tr td:last-child{
+	border-right-width:0px !important;
+}
+
+.prize-table td{
+	vertical-align: middle !important;
+}
+
+
+@media screen and (max-width: 768px){
+	.avtar_spec{
+		text-align: left;
+	}
+}
+
+@media screen and (min-width: 992px){
+	.avtar_spec{
+		text-align: right;
+	}
+}
+
