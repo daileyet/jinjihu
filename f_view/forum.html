@@ -27,13 +27,72 @@
 							<ul class="nav nav-tabs">
 								<li role="presentation" class="active"><a href="forum.html">公开方案</a></li>
 								<li role="presentation"><a href="forum_self.html">我的方案</a></li>
-								<li class="pull-right"><button type="button" class="btn btn-primary mt10"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span>上传方案</button></li>
+								<li class="pull-right"><button type="button" class="btn btn-primary mt10" data-toggle="modal" data-target="#soultionUpload"><span class="glyphicon glyphicon-plus"
+										 aria-hidden="true"></span>上传方案</button></li>
 							</ul>
-							
+
+							<div>
+								<div class="list-group mt20 pad10">
+									<div class="list-group-item row">
+										<div class="col-sm-1 pad0">
+											<div class="text-muted text-center">
+												<span class="glyphicon glyphicon-chevron-up"></span>
+											</div>
+											<div class="text-muted text-center">
+												<span class="">33</span>
+											</div>
+										</div>
+										<div class="col-sm-2 pad0">
+											<img src="../img/Build_Team_Icon.png" class="img-thumbnail img-100" />
+										</div>
+										<div class="col-sm-7">
+											<p class="list-group-item-text mt10">
+												<h5 class="list-group-item-heading"><a href="forum_solution_details.html">用户自定义方案名称</a></h5>
+												<h6>&nbsp;</h6>
+												<p class="text-muted"><span class="glyphicon glyphicon-user">用户昵称</span> &nbsp;&nbsp; <span class="glyphicon glyphicon-time">3小时前</span></p>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<nav>
+								<ul class="pager">
+									<li><a href="#?id=${faq.id }&pageNo=${page.pageNo-1}&pageSize=${page.pageSize}">Previous</a></li>
+									<li><a href="#?id=${faq.id }&pageNo=${page.pageNo+1}&pageSize=${page.pageSize}">Next</a></li>
+								</ul>
+							</nav>
+							<div class="modal fade" id="soultionUpload" tabindex="-1" role="dialog" aria-labelledby="soultionUpload">
+								<div class="modal-dialog" role="document">
+									<div class="modal-content">
+										<div class="modal-header">
+											<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+											<h4 class="modal-title" id="exampleModalLabel">上传方案</h4>
+										</div>
+										<div class="modal-body">
+											<form>
+												<div class="form-group">
+													<label for="soultionfile" class="control-label">选择文件:</label>
+													<input type="file" class="form-control" id="soultionfile" name="soultionfile">
+												</div>
+												<div class="form-group">
+													<label for="solutionName" class="control-label">方案名称:</label>
+													<input type="text" class="form-control" id="solutionName" name="solutionName"/>
+													<p class="text-muted">*建议在名字中描述方案特点</p>
+												</div>
+											</form>
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+											<button type="button" class="btn btn-primary">确定</button>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
+		</div>
 	</body>
 
 </html>
