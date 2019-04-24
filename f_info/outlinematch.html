@@ -20,11 +20,11 @@
 			<div class="container-fluid">
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-			          <span class="sr-only">Toggle navigation</span>
-			          <span class="icon-bar"></span>
-			          <span class="icon-bar"></span>
-			          <span class="icon-bar"></span>
-			        </button>
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
 					<a class="navbar-brand" href="../index.html"><img src="../img/Logo_Hover.png" /></a>
 				</div>
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -106,7 +106,7 @@
 							</table>
 						</div>
 					</div>
-					<hr class="col-md-12"/>
+					<hr class="col-md-12" />
 					<div class="section" id="submited">
 						<h4>提交资料</h4>
 						<div class="col-md-12 ">
@@ -130,7 +130,7 @@
 										<td></td>
 										<td></td>
 										<td><a href="#" class="btn btn-primary btn-sm">下载</a></td>
-										<td><a href="#" >查看备注</a></td>
+										<td><a href="#">查看备注</a></td>
 									</tr>
 									<tr>
 										<td></td>
@@ -139,25 +139,34 @@
 										<td></td>
 										<td></td>
 										<td><a href="#" class="btn btn-primary btn-sm">下载</a></td>
-										<td><a href="#" >查看备注</a></td>
+										<td><a href="#">查看备注</a></td>
 									</tr>
 								</tbody>
 							</table>
 							<nav>
 								<ul class="pager">
-										<li>
-											<a href="#">Previous</a>
-										</li>
-										<li>
-											<a href="#">Next</a>
-									</c:if>
+									<li>
+										<a href="#">Previous</a>
+									</li>
+									<li>
+										<a href="#">Next</a>
+										</c:if>
 								</ul>
 							</nav>
 						</div>
 					</div>
-					<hr class="col-md-12"/>
+					<hr class="col-md-12" />
 					<div class="section" id="leaderboard">
 						<h4>排行榜</h4>
+						<div class="form-group mt10" style="padding-left:15px;">
+							<input type="radio" name="openrank" value="true" /> 开放排行榜 <input type="radio" name="openrank" value="false" />
+							关闭排行榜
+							<button class="btn btn-primary btn-sm" id="btnOpenRank">提交</button>
+						</div>
+						<div class="form-group mt10" style="padding-left:15px;">
+							<button autocomplete="off" data-loading-text="Ranking..." data-toggle="tooltip" data-placement="right" title="计算当前阶段排名，并更新至排行榜"
+							 class="btn btn-primary btn-sm">排名</button>
+						</div>
 						<div class="col-md-12">
 							<table class="table table-bordered">
 								<thead>
@@ -173,27 +182,27 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td><img src="" class="img-thumbnail img-circle"/></td>
+										<td><img src="../img/Silhouette.png" class="img-thumbnail img-circle" /></td>
 										<td>1</td>
-										<td><img src="../img/Arrow_Up.png"/></td>
+										<td><img src="../img/Arrow_Up.png" /></td>
 										<td></td>
 										<td></td>
 										<td></td>
 										<td></td>
 									</tr>
 									<tr>
-										<td><img src="" class="img-thumbnail img-circle"/></td>
+										<td><img src="../img/Silhouette.png" class="img-thumbnail img-circle" /></td>
 										<td>2</td>
-										<td><img src="../img/Arrow_Down.png"/></td>
+										<td><img src="../img/Arrow_Down.png" /></td>
 										<td></td>
 										<td></td>
 										<td></td>
 										<td></td>
 									</tr>
 									<tr>
-										<td><img src="" class="img-thumbnail img-circle"/></td>
+										<td><img src="../img/Silhouette.png" class="img-thumbnail img-circle" /></td>
 										<td>3</td>
-										<td><img src="../img/Arrow_Down.png"/></td>
+										<td><img src="../img/Arrow_Down.png" /></td>
 										<td></td>
 										<td></td>
 										<td></td>
@@ -203,43 +212,145 @@
 							</table>
 							<nav>
 								<ul class="pager">
-										<li>
-											<a href="#">Previous</a>
-										</li>
-										<li>
-											<a href="#">Next</a>
-										</li>
+									<li>
+										<a href="#">Previous</a>
+									</li>
+									<li>
+										<a href="#">Next</a>
+									</li>
 								</ul>
 							</nav>
 						</div>
 					</div>
-					
+
+					<hr class="col-md-12" />
+					<div class="section" id="assistant">
+						<h4>比赛协助</h4>
+						<div class="form-group mt10" style="padding-left:15px;">
+							<button title="" class="btn btn-primary" data-toggle="modal" data-target="#userPickDia">新增协助者</button>
+							<p class="text-muted">协助者可以编辑、发布以及代为管理比赛</p>
+						</div>
+						<div class="col-md-12">
+							<table class="table table-bordered">
+								<thead>
+									<tr>
+										<th>头像</th>
+										<th>昵称</th>
+										<th>添加时间</th>
+										<th>操作</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td><img src="../img/Silhouette.png" class="img-thumbnail img-50 img-circle" /></td>
+										<td>Dailey Dai</td>
+										<td>2019-4-12</td>
+										<td><a href="#" data-toggle="modal" data-target="#delConfirmDia"><span class="glyphicon glyphicon-trash text-danger"
+												 aria-hidden="true"></span></a></td>
+									</tr>
+									<tr>
+										<td><img src="../img/Silhouette.png" class="img-thumbnail img-50 img-circle" /></td>
+										<td>Jack Li</td>
+										<td>2019-4-12</td>
+										<td><a href="#" data-toggle="modal" data-target="#delConfirmDia"><span class="glyphicon glyphicon-trash text-danger"
+												 aria-hidden="true"></span></a></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
 				</div>
 			</div>
+			<!-- Modal -->
+			<div class="modal fade bootbox" id="delConfirmDia" tabindex="-1" role="dialog">
+				<div class="modal-dialog modal-sm" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							<h4 class="modal-title">提示</h4>
+						</div>
+						<div class="modal-body">
+							<p>请您确认是否要移除该协助者？</p>
+						</div>
+						<div class="modal-footer ">
+							<button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+							<button type="button" class="btn btn-primary">确定</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="modal fade bootbox" id="userPickDia" tabindex="-1" role="dialog">
+				<div class="modal-dialog " role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							<h4 class="modal-title">用户选择</h4>
+						</div>
+						<div class="modal-body">
+							<div class="form-group">
+								<div class="input-group">
+									<input type="text" class="form-control" placeholder="Search for...">
+									<span class="input-group-btn">
+										<button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
+									</span>
+								</div>
+							</div>
+							<div class="list-group" style="height: 200px;">
+								<div  class="list-group-item ">
+									<h5 class="list-group-item-heading"><img src="../img/Silhouette.png" class="img-thumbnail img-50 img-circle" /> Jack Li</h5>
+									<p class="list-group-item-text"></p>
+								</div>
+								<div  class="list-group-item ">
+									<h5 class="list-group-item-heading"><img src="../img/Silhouette.png" class="img-thumbnail img-50 img-circle" /> Wu Li</h5>
+									<p class="list-group-item-text"></p>
+								</div>
+							</div>
+						</div>
+						<div class="modal-footer ">
+							<button type="button" class="btn btn-primary">确定</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+
+
+
+
+
+
+
+
 			<script src="../thirdparty/chart/Chart.bundle.min.js" type="text/javascript" charset="utf-8"></script>
 			<script type="text/javascript">
 				var lineChartData = {
-				    labels : ["January","February","March","April","May","June","July","Agost","September","October","November","December"],
-				    datasets: [{
-				        data: [20, 30, 80, 20, 40, 10, 60,100,200,110,130,56],
-				        fill:false,
-				        pointRadius: 5,
-				        pointHitRadius: 10,
-				        pointBackgroundColor: "rgba(56, 155, 255,.6)",
-				        pointBorderWidth: 2,
-				        pointBorderColor:"#ffffe6",
-				        pointHoverRadius: 8,
-				        1:1
-				    }]
+					labels: ["January", "February", "March", "April", "May", "June", "July", "Agost", "September", "October",
+						"November", "December"
+					],
+					datasets: [{
+						data: [20, 30, 80, 20, 40, 10, 60, 100, 200, 110, 130, 56],
+						fill: false,
+						pointRadius: 5,
+						pointHitRadius: 10,
+						pointBackgroundColor: "rgba(56, 155, 255,.6)",
+						pointBorderWidth: 2,
+						pointBorderColor: "#ffffe6",
+						pointHoverRadius: 8,
+						1: 1
+					}]
 				}
-				
+
 				var ctx = $("#graphic canvas");
 				var LineChartDemo = new Chart(ctx, {
 					type: 'line',
 					data: lineChartData,
-				    options:{
-				    	title:{display:false}
-				    }
+					options: {
+						title: {
+							display: false
+						}
+					}
 				});
 			</script>
 	</body>
